@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} ^(www\.)?hitchinteractive\.com$ [NC]
+RewriteRule ^(.*)$ https://hitchinteractive.com/$1 [L,R=301]
+</IfModule>
+<IfModule mod_headers.c>
+Header always set Content-Security-Policy "upgrade-insecure-requests;"
+</IfModule>
+ErrorDocument 404 /index.html

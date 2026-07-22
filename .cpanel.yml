@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=$HOME/public_html
+    - /bin/cp -R index.html learning.html superstore.html services.html .htaccess assets $DEPLOYPATH/
+
+# push 到 production 远端会自动触发本文件的部署任务
