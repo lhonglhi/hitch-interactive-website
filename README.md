@@ -2,6 +2,9 @@
 
 Static bilingual (EN/中文) site. No build step.
 
+Repo: https://github.com/lhonglhi/hitch-interactive-website (this folder is the repo root).
+Live site hitchinteractive.com is still the old WordPress version — no auto-deploy hooked up yet.
+
 ## Launch at localhost
     cd website
     python3 -m http.server 8000
