@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hitch Interactive — A Hitchhiker's Guide to Embodied AI</title>
+<meta name="description" content="Hitch Interactive — the Physical-AI hub: competitions, learning, the robotics superstore, and embodied-AI services.">
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/logo-mark.svg">
+<script src="assets/i18n.js"></script>
+<script src="assets/inquiry.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html"><img src="assets/logo-mark.svg" alt="Hitch Interactive"></a>
+    <nav><ul>
+      <li><a class="ext" href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="赛事">Competition</a></li>
+      <li><a href="learning.html" data-zh="学院">Academy</a></li>
+      <li><a href="superstore.html" data-zh="机器人超市">Superstore</a></li>
+      <li><a href="services.html" data-zh="服务">Services</a></li>
+      <li><a class="ext" href="https://github.com/hitchopen" target="_blank" rel="noopener" data-zh="开源">Open Source</a></li>
+      <li><a class="cta" href="#" onclick="return openInquiry('general')" data-zh="联系销售">Contact Sales</a></li>
+      <li><button id="langToggle" class="langbtn" onclick="toggleLang()">中文</button></li>
+    </ul></nav>
+  </div>
+</header>
+
+<div class="hero">
+  <img class="bg" src="assets/hero.jpg" alt="">
+  <div class="wrap">
+    <h1 data-zh="<span class='r'>AI</span> 的银河系漫游指南">A Hitchhiker's Guide to <span class="r">AI</span></h1>
+    <p class="sub" data-zh="Hitch Interactive 是汇聚尖端人形机器人与灵巧手的枢纽：我们举办竞技场、传授技能、供应机器人，并让它们持续可靠地运行。">Hitch Interactive is the hub with cutting-edge humanoids and hands: we run the arenas,
+    teach the skills, stock the robots, and keep them running.</p>
+    <div class="btns">
+      <a class="btn primary" href="superstore.html" data-zh="进入机器人超市">Browse the Superstore</a>
+      <a class="btn ghost" href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="Hitch Open 世界AI锦标赛 ↗">Hitch Open Championships ↗</a>
+    </div>
+  </div>
+</div>
+
+<section class="band-cream">
+  <div class="wrap news-wrap">
+    <h2 data-zh="公司要闻">Latest Highlights</h2>
+    <p class="lead" data-zh="来自 Hitch Open 世界AI锦标赛与 Hitch Interactive 的重大动态。左右滑动查看。">Major recent milestones from Hitch Open and Hitch Interactive. Swipe or use the arrows.</p>
+    <div class="news-nav"><button id="newsPrev" aria-label="Previous">‹</button><button id="newsNext" aria-label="Next">›</button></div>
+    <div class="news-track" id="newsTrack">
+      <article class="news-card">
+        <img src="assets/photo-hope.jpg" alt="HOPE AI Challenge">
+        <div class="body">
+          <div class="date" data-zh="2026年6月 · 北京">June 2026 · Beijing</div>
+          <h3 data-zh="HOPE 乒乓具身智能挑战赛入选第二届世界人形机器人运动会正式比赛项目">HOPE AI Challenge Joins the 2nd World Humanoid Robot Games as an Official Competition</h3>
+          <p data-zh="由北京市人民政府等联合主办、北奥集团（2008 与 2022 奥运会运营团队）联合运营，2026年8月在国家速滑馆「冰丝带」开赛。">Co-hosted with the People's Government of Beijing and operated with Beiao Group — the team behind the 2008 &amp; 2022 Olympics — debuting August 2026 at the Ice Ribbon.</p>
+          <a href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="阅读全文 ↗">Read more ↗</a>
+        </div>
+      </article>
+      <article class="news-card">
+        <img src="assets/photo-record.png" alt="Tianmen Mountain AI record">
+        <div class="body">
+          <div class="date" data-zh="2025 · 张家界天门山">2025 · Tianmen Mountain</div>
+          <h3 data-zh="首届 Hitch Open 世界AI锦标赛：10亿+ 触达，AI 车队刷新天门山纪录">First Hitch Open World AI Championships: 1B+ Reach and a New AI Record on the 99 Bends</h3>
+          <p data-zh="50万+ 现场观众、8.46M+ 社交互动；清华大学极限竞速战队以 16'10"838 创造 AI 纪录。">500K+ on-site spectators, 8.46M+ social engagement; Tsinghua's racing team set the AI record at 16'10"838.</p>
+          <a href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="阅读全文 ↗">Read more ↗</a>
+        </div>
+      </article>
+      <article class="news-card">
+        <img src="assets/photo-ces.jpg" alt="CES 2025 Indy Autonomous Challenge">
+        <div class="body">
+          <div class="date" data-zh="2025年1月 · 拉斯维加斯 CES">Jan 2025 · CES Las Vegas</div>
+          <h3 data-zh="伯克利 ROAR 战队夺得印地自动驾驶挑战赛全球总冠军">Berkeley ROAR Wins the Indy Autonomous Challenge World Title</h3>
+          <p data-zh="由联合创始人 Dr. Allen Yang 领衔的加州伯克利 ROAR 战队在 CES 2025 头对头对决中问鼎全球第一。">Led by co-founder Dr. Allen Yang, the UC Berkeley ROAR team took the No. 1 title in head-to-head autonomous racing at CES 2025.</p>
+          <a href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="阅读全文 ↗">Read more ↗</a>
+        </div>
+      </article>
+      <article class="news-card">
+        <div class="ph">🏰</div>
+        <div class="body">
+          <div class="date" data-zh="2026 · 上海迪士尼度假区">2026 · Shanghai Disney Resort</div>
+          <h3 data-zh="全球首场城市赛道 AI 竞速赛落地上海迪士尼">The World's First Urban AI Race Comes to Shanghai Disney Resort</h3>
+          <p data-zh="Hitch Open 将 AI 竞速从高山天路带入城市地标，让百万游客近距离见证物理智能的极限。">Hitch Open brings AI racing from mountain roads to a landmark urban circuit — physical AI at the limit, in front of millions.</p>
+          <a href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="阅读全文 ↗">Read more ↗</a>
+        </div>
+      </article>
+      <article class="news-card">
+        <div class="ph">🌉</div>
+        <div class="body">
+          <div class="date" data-zh="2027 · 加利福尼亚（预告）">2027 · California (Preview)</div>
+          <h3 data-zh="HOPE AI 挑战赛将登陆加州：亚、美、欧高校同台竞技">HOPE AI Challenge Heads to California — Asian, US &amp; European Universities on One Platform</h3>
+          <p data-zh="早期洽谈院校包括牛津大学、苏黎世联邦理工、田纳西大学、佛罗里达大学及 IEEE 机器人学会硅谷分会。">Early discussions include Oxford, ETH Zurich, U. of Tennessee, U. of Florida and the IEEE Robotics Society Silicon Valley.</p>
+          <a href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="阅读全文 ↗">Read more ↗</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 data-zh="四条通道，一个枢纽">Four ways in</h2>
+    <p class="lead" data-zh="一个具身智能枢纽，四扇门——选择你的入口。">One hub, four doors — pick yours.</p>
+    <div class="grid g4">
+      <div class="card tint tint-blue">
+        <div class="icon">🏆</div>
+        <div class="tag" data-zh="赛事">Competition</div>
+        <h3>Hitch Open</h3>
+        <p data-zh="全球顶级物理智能竞技场——天门山 AI 竞速与 HOPE 人形机器人挑战赛（世界人形机器人运动会正式项目）。">The world's premier physical-AI proving ground — AI racing on Tianmen Mountain and the
+        HOPE humanoid challenge, an official competition of the World Humanoid Robot Games.</p>
+        <a class="go ext" href="https://hitchopen.ai" target="_blank" rel="noopener">hitchopen.ai</a>
+      </div>
+      <div class="card tint tint-lime">
+        <div class="icon">🎓</div>
+        <div class="tag" data-zh="学院">Academy</div>
+        <h3>Hitch Academy</h3>
+        <p data-zh="AI、机器人与沉浸式技术的世界级课程——从 ROAR Academy 基础课到元宇宙大师课，由一流教育者执教。">World-class curricula in AI, robotics and immersive technology — from ROAR Academy
+        foundations to metaverse master classes, taught by leading educators.</p>
+        <a class="go" href="learning.html" data-zh="浏览课程 →">Explore courses →</a>
+      </div>
+      <div class="card tint tint-orange">
+        <div class="icon">🤖</div>
+        <div class="tag" data-zh="机器人超市">Superstore</div>
+        <h3 data-zh="机器人超市">The Robotics Superstore</h3>
+        <p data-zh="我们把最尖端的人形机器人、灵巧手与动作捕捉系统摆上货架——覆盖各价位，可买可租，由我们自己的团队保驾护航。">We put the most advanced humanoids, dexterous hands and motion-capture systems on the
+        shelf — every price point, buy or rent, backed by our own crew.</p>
+        <a class="go" href="superstore.html" data-zh="查看产品目录 →">See the catalog →</a>
+      </div>
+      <div class="card tint tint-green">
+        <div class="icon">🔧</div>
+        <div class="tag" data-zh="服务">Services</div>
+        <h3 data-zh="咨询与维保">Consulting &amp; Maintenance</h3>
+        <p data-zh="具身智能咨询、基于我们开源技术栈的专业培训，以及全天候待命的本地维保团队。">Embodied-AI consulting, professional training on our open-source stack, and a local
+        maintenance crew on call around the clock.</p>
+        <a class="go" href="services.html" data-zh="了解服务 →">Our services →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-sky">
+  <div class="wrap">
+    <h2 data-zh="赢得对 AI 的信任">Earning the Trust in AI</h2>
+    <div class="stats" style="margin-top:30px">
+      <div class="stat"><b>1B+</b><span data-zh="媒体触达用户">users reached</span></div>
+      <div class="stat"><b>500K+</b><span data-zh="现场观众">on-site spectators</span></div>
+      <div class="stat"><b>11</b><span data-zh="合作高校">partner universities</span></div>
+      <div class="stat"><b>#1</b><span data-zh="世界冠军头衔">world championship title</span></div>
+    </div>
+    <div class="uniband" style="margin-top:38px">
+      <img src="assets/universities/ucberkeley.png" alt="UC Berkeley" title="UC Berkeley">
+      <img src="assets/universities/hku.png" alt="The University of Hong Kong" title="The University of Hong Kong">
+      <img src="assets/universities/tsinghua.png" alt="Tsinghua University" title="Tsinghua University">
+      <img src="assets/universities/sjtu.png" alt="Shanghai Jiao Tong University" title="Shanghai Jiao Tong University">
+      <img src="assets/universities/fudan.png" alt="Fudan University" title="Fudan University">
+      <img src="assets/universities/zhejiang.png" alt="Zhejiang University" title="Zhejiang University">
+      <img src="assets/universities/xjtu.png" alt="Xi'an Jiaotong University" title="Xi'an Jiaotong University">
+      <img src="assets/universities/jilin.png" alt="Jilin University" title="Jilin University">
+      <img src="assets/universities/hunan.png" alt="Hunan University" title="Hunan University">
+      <img src="assets/universities/hainan.png" alt="Hainan University" title="Hainan University">
+      <img src="assets/universities/wut.png" alt="Wuhan University of Technology" title="Wuhan University of Technology">
+    </div>
+  </div>
+</section>
+
+<section class="band-black">
+  <div class="wrap">
+    <div class="strip">
+      <img src="assets/hitchopen.png" alt="Hitch Open World AI Championships">
+      <p data-zh="<b>Hitch Open 世界AI锦标赛</b>——大自然的物理智能竞技场。2026年，HOPE 人形机器人挑战赛将亮相北京第二届世界人形机器人运动会，全球首场城市 AI 竞速赛也将登陆上海迪士尼度假区。"><b>Hitch Open World AI Championships</b> — nature's arena for physical AI.
+      In 2026 the HOPE humanoid challenge debuts at the 2nd World Humanoid Robot Games in Beijing,
+      and our first urban AI race arrives at Shanghai Disney Resort.</p>
+      <a class="btn ghost" href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="进入竞技场 ↗">Enter the arena ↗</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <h4>Hitch Interactive</h4>
+        <p style="max-width:320px" data-zh="美国加州圣拉蒙">San Ramon, California, USA.</p>
+      </div>
+      <div>
+        <h4 data-zh="探索">Explore</h4>
+        <a href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="赛事 ↗">Competition ↗</a>
+        <a href="learning.html" data-zh="学院">Academy</a>
+        <a href="superstore.html" data-zh="机器人超市">Superstore</a>
+        <a href="services.html" data-zh="服务">Services</a>
+      </div>
+      <div>
+        <h4 data-zh="开源">Open Source</h4>
+        <a href="https://github.com/hitchopen" target="_blank" rel="noopener">github.com/hitchopen</a>
+        <a href="https://hitchopen.ai" target="_blank" rel="noopener">hitchopen.ai</a>
+      </div>
+      <div>
+        <h4 data-zh="联系我们">Contact</h4>
+        <a href="#" onclick="return openInquiry('general')" data-zh="销售咨询（表单）">Sales inquiry (form)</a>
+        <a href="mailto:media@hitchinteractive.com">media@hitchinteractive.com</a>
+      </div>
+    </div>
+    <div class="fineprint" data-zh="© 2026 Hitch Interactive。保留所有权利。AGIBOT 为其各自所有者之商标。">© 2026 Hitch Interactive. All rights reserved. AGIBOT is a trademark of its respective owner.</div>
+  </div>
+</footer>
+
+</body>
+</html>

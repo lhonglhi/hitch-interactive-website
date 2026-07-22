@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Services — Hitch Interactive</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/logo-mark.svg">
+<script src="assets/i18n.js"></script>
+<script src="assets/inquiry.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html"><img src="assets/logo-mark.svg" alt="Hitch Interactive"></a>
+    <nav><ul>
+      <li><a class="ext" href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="赛事">Competition</a></li>
+      <li><a href="learning.html" data-zh="学院">Academy</a></li>
+      <li><a href="superstore.html" data-zh="机器人超市">Superstore</a></li>
+      <li><a class="active" href="services.html" data-zh="服务">Services</a></li>
+      <li><a class="ext" href="https://github.com/hitchopen" target="_blank" rel="noopener" data-zh="开源">Open Source</a></li>
+      <li><a class="cta" href="#" onclick="return openInquiry('general')" data-zh="联系销售">Contact Sales</a></li>
+      <li><button id="langToggle" class="langbtn" onclick="toggleLang()">中文</button></li>
+    </ul></nav>
+  </div>
+</header>
+
+<section class="band-green">
+  <div class="wrap">
+    <div class="kicker" data-zh="服务 · 咨询与本地维保">Services · Consulting &amp; Local Maintenance</div>
+    <h1 style="font-size:40px" data-zh="机器人会出故障——这正是信任的起点">Robots break — that's where trust is built</h1>
+    <p class="lead" data-zh="当您的机器人需要帮助时，我们已经在您身边。从具身智能咨询、技能训练到全天候本地维保——我们让经手的每一台机器都保持最佳状态。">When your robot needs help, we're already nearby. From embodied-AI consulting and
+    skill training to round-the-clock local maintenance, we keep every machine we touch
+    running at its best.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="grid g2">
+
+      <div class="card">
+        <div class="icon">🧭</div>
+        <div class="tag" data-zh="咨询">Consulting</div>
+        <h3 data-zh="具身智能咨询与技能训练">Embodied-AI Consulting &amp; Skill Training</h3>
+        <p data-zh="基于 Hitch Open 开源平台（github.com/hitchopen）的实战级服务：">Battle-tested services built on the Hitch Open open-source platform
+        (github.com/hitchopen):</p>
+        <ul style="list-style:none;margin-top:12px;color:var(--muted);font-size:14.5px">
+          <li data-zh="— 3D 感知、训练与数据采集技术栈的落地咨询">— Deployment consulting for 3D perception, training &amp; data-collection stacks</li>
+          <li data-zh="— 人形机器人技能训练服务（高技能应用的专有知识）">— Humanoid skill-training services with proprietary know-how for highly skilled applications</li>
+          <li data-zh="— 仿真到实机（sim-to-real）部署与基准测试">— Sim-to-real deployment and benchmarking</li>
+          <li data-zh="— 面向企业与科研机构的具身智能专业培训">— Professional training for businesses and research institutions</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="icon">🔧</div>
+        <div class="tag" data-zh="维保">Maintenance</div>
+        <h3 data-zh="本地化最优维保网络">Best-in-Class Localized Maintenance</h3>
+        <p data-zh="我们正在为人形机器人从零打造一支专属的现场服务队伍：">A field-service network we're building from the ground up, just for humanoid robots:</p>
+        <ul style="list-style:none;margin-top:12px;color:var(--muted);font-size:14.5px">
+          <li data-zh="— 7×24 紧急热线，响应时间有承诺">— 24/7 emergency hotline with guaranteed response times</li>
+          <li data-zh="— 备件供应、预防性维护与故障维修">— Spare parts, preventive maintenance &amp; corrective repair</li>
+          <li data-zh="— 认证协助（FCC/UL 类）与安装部署">— Certification assistance (FCC/UL-class) and on-site deployment</li>
+          <li data-zh="— 湾区服务中心；多伦多远程支持节点规划中">— Bay Area service hub; Toronto remote-support node planned</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="grid g3" style="margin-top:24px">
+      <div class="card">
+        <b style="color:var(--red);font-size:26px">24/7</b>
+        <p data-zh="紧急热线与实时响应">emergency hotline &amp; real-time response</p>
+      </div>
+      <div class="card">
+        <b style="color:var(--red);font-size:26px">7 <span style="font-size:15px" data-zh="年">yrs</span></b>
+        <p data-zh="停产后备件持续供应保障">spare-parts supply guaranteed after end-of-life</p>
+      </div>
+      <div class="card">
+        <b style="color:var(--red);font-size:26px" data-zh="双语">Bilingual</b>
+        <p data-zh="中英双语工程师团队，横跨中美生态">EN/中文 engineering teams across the US &amp; Asia ecosystems</p>
+      </div>
+    </div>
+
+    <div class="strip" style="margin-top:36px">
+      <p data-zh="<b>预约咨询：</b>告诉我们您的场景——教育、科研或企业试点——我们将给出从设备选型、租赁到维保的整体方案。"><b>Book a consultation:</b> tell us your scenario — education, research or an
+      enterprise pilot — and we'll scope hardware, rental and service end-to-end.</p>
+      <a class="btn primary" href="#" onclick="return openInquiry('services')" data-zh="预约咨询">Book a consultation</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fineprint" data-zh="© 2026 Hitch Interactive。保留所有权利。">© 2026 Hitch Interactive. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>

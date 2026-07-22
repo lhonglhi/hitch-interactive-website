@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="64" viewBox="0 0 300 64">
+  <style>
+    .h { font: 900 38px 'Arial Black', Arial, sans-serif; fill: #D7262C; font-style: italic; letter-spacing: 1px; }
+    .i { font: 700 13px Arial, sans-serif; fill: #1E2430; letter-spacing: 6.5px; }
+  </style>
+  <text x="2" y="36" class="h">HITCH</text>
+  <text x="4" y="56" class="i">INTERACTIVE</text>
+</svg>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Robotics Superstore — Hitch Interactive</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/logo-mark.svg">
+<script src="assets/i18n.js"></script>
+<script src="assets/inquiry.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html"><img src="assets/logo-mark.svg" alt="Hitch Interactive"></a>
+    <nav><ul>
+      <li><a class="ext" href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="赛事">Competition</a></li>
+      <li><a href="learning.html" data-zh="学院">Academy</a></li>
+      <li><a class="active" href="superstore.html" data-zh="机器人超市">Superstore</a></li>
+      <li><a href="services.html" data-zh="服务">Services</a></li>
+      <li><a class="ext" href="https://github.com/hitchopen" target="_blank" rel="noopener" data-zh="开源">Open Source</a></li>
+      <li><a class="cta" href="#" onclick="return openInquiry('general')" data-zh="联系销售">Contact Sales</a></li>
+      <li><button id="langToggle" class="langbtn" onclick="toggleLang()">中文</button></li>
+    </ul></nav>
+  </div>
+</header>
+
+<section class="band-orange">
+  <div class="wrap">
+    <div class="kicker" data-zh="机器人超市 · AGIBOT · Leo Rover · CHINGMU 动捕">The Robotics Superstore · AGIBOT · Leo Rover · CHINGMU Motion Capture</div>
+    <h1 style="font-size:40px" data-zh="每一个价位，都有一台合适的机器人">A robot for every price point</h1>
+    <p class="lead" data-zh="欢迎来到我们的机器人超市。我们把 AGIBOT 人形机器人、Leo Rover 开源移动机器人与 CHINGMU 光学动作捕捉系统摆上同一排货架——每一台都可以买、可以租（Rent-a-Robot），并由我们自己的团队完成部署与维保。价格与交期请点击任意产品的「询价」按钮。">Welcome to our Robotics Superstore. We stock AGIBOT humanoids, Leo Rover open-source
+    mobile robots and CHINGMU optical motion capture on the same shelf — every machine
+    available to buy or rent through Rent-a-Robot, deployed and maintained by our own team.
+    Use the inquiry button on any product for pricing and lead times.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="grid g4">
+
+      <div class="card prod">
+        <img class="shot" src="assets/products/a3.jpg" alt="AGIBOT A3">
+        <div class="series" data-zh="全尺寸人形 · 旗舰">FULL-SIZE HUMANOID · FLAGSHIP</div>
+        <h3>AGIBOT A3</h3>
+        <p data-zh="2026 年发布的新一代全尺寸人形机器人——「为舞台而生的硅基明星」。173cm 黄金比例、模特级头身比，内在强大、外表优雅，支持深度定制。">The new-generation full-size humanoid launched in 2026 — "a silicon-based star born for
+        the stage." 173 cm golden-ratio proportions, powerful inside, refined outside, fully
+        customizable.</p>
+        <ul>
+          <li data-zh="173cm 黄金比例造型">173 cm, model-grade proportions</li>
+          <li data-zh="舞台展示与商业交互旗舰">Stage, showcase &amp; interaction flagship</li>
+        </ul>
+        <button class="mail" onclick="openInquiry('pricing','AGIBOT A3')" data-zh="询价">Request Pricing</button>
+      </div>
+
+      <div class="card prod">
+        <img class="shot" src="assets/products/g2.jpg" alt="AGIBOT G2">
+        <div class="series" data-zh="工业级具身作业">INDUSTRIAL EMBODIED OPERATION</div>
+        <h3>AGIBOT G2 / G2 Air</h3>
+        <p data-zh="工业级交互式具身作业机器人：5 自由度腰腿结构、26 自由度全身（可选 19 自由度灵巧手）、高精度力控双臂，支持低延迟超视距遥操作。">Industrial-grade interactive embodied operational robot: 5-DoF waist-leg structure,
+        26-DoF body (optional 19-DoF dexterous hands), force-controlled dual arms, low-latency
+        BVLOS teleoperation.</p>
+        <ul>
+          <li data-zh="亚毫米级力控双臂">Sub-millimeter force-controlled arms</li>
+          <li data-zh="工业搬运 · 物流分拣 · 巡检">Handling · sorting · inspection</li>
+        </ul>
+        <button class="mail" onclick="openInquiry('pricing','AGIBOT G2 / G2 Air')" data-zh="询价">Request Pricing</button>
+      </div>
+
+      <div class="card prod">
+        <img class="shot" src="assets/products/x2-ultra.jpg" alt="AGIBOT X2 Ultra">
+        <div class="series" data-zh="半尺寸人形">HALF-SIZE HUMANOID</div>
+        <h3>AGIBOT X2 Ultra</h3>
+        <p data-zh="在运动、交互与任务智能上全面强化，为导览讲解与人机互动场景量身打造。">Powerful motion, interaction and task intelligence — tailor-made for guided tours and
+        rich human-robot interaction.</p>
+        <ul>
+          <li data-zh="导览 · 讲解 · 接待">Tours · presentations · reception</li>
+          <li data-zh="强运动与交互智能">Advanced motion &amp; interaction AI</li>
+        </ul>
+        <button class="mail" onclick="openInquiry('pricing','AGIBOT X2 Ultra')" data-zh="询价">Request Pricing</button>
+      </div>
+
+      <div class="card prod">
+        <img class="shot" src="assets/products/x2.jpg" alt="AGIBOT X2">
+        <div class="series" data-zh="半尺寸人形">HALF-SIZE HUMANOID</div>
+        <h3>AGIBOT X2 / X2 REC</h3>
+        <p data-zh="面向娱乐与商业演出的半尺寸人形机器人；X2 REC 专为影视拍摄与内容制作打造。">Engineered for entertainment and commercial performance; X2 REC is purpose-built for
+        filming and content production.</p>
+        <ul>
+          <li data-zh="演出 · 活动 · 内容制作">Shows · events · content creation</li>
+          <li data-zh="灵动步态与表演动作库">Agile gait &amp; performance motion library</li>
+        </ul>
+        <button class="mail" onclick="openInquiry('pricing','AGIBOT X2 / X2 REC')" data-zh="询价">Request Pricing</button>
+      </div>
+
+      <div class="card prod">
+        <img class="shot" src="assets/products/d1-series.jpg" alt="AGIBOT D1 quadruped series">
+        <div class="series" data-zh="四足机器人系列">QUADRUPED SERIES</div>
+        <h3 data-zh="D1 系列（MaxPro / Max / Ultra / Pro / Edu）">D1 Series (MaxPro / Max / Ultra / Pro / Edu)</h3>
+        <p data-zh="从大负载、强机动的 D1 MaxPro（强化学习运动控制），到轻量长续航的 D1 Max，再到紧凑敏捷、面向教育的 D1 Pro/Edu——全场景四足家族。">From the high-payload, RL-driven D1 MaxPro to the lightweight, long-endurance D1 Max
+        and the compact, agile D1 Pro/Edu — a quadruped family for every scenario.</p>
+        <ul>
+          <li data-zh="强化学习运动算法">Reinforcement-learning locomotion</li>
+          <li data-zh="巡检 · 科研 · 教育">Inspection · research · education</li>
+        </ul>
+        <button class="mail" onclick="openInquiry('pricing','AGIBOT D1 Series')" data-zh="询价">Request Pricing</button>
+      </div>
+
+      <div class="card prod">
+        <img class="shot" src="assets/products/omnihand.jpg" alt="AGIBOT OmniHand family">
+        <div class="series" data-zh="灵巧手与夹爪">DEXTEROUS HANDS &amp; GRIPPERS</div>
+        <h3>OmniHand 3 / Pro · OmniPicker 3</h3>
+        <p data-zh="OmniHand 3 Lite 以超耐用材料打造，坚固易用；OmniHand Pro 面向科研与轻工业；OmniPicker 3 为具身智能应用设计的工业级自适应夹爪。">OmniHand 3 Lite delivers exceptional robustness in hyper-durable materials; OmniHand Pro
+        serves research and light industry; OmniPicker 3 is an industrial-grade adaptive gripper
+        for embodied-AI applications.</p>
+        <ul>
+          <li data-zh="科研 · 轻工业 · 集成商">Research · light industry · integrators</li>
+          <li data-zh="兼容主流人形平台">Compatible with major humanoid platforms</li>
+        </ul>
+        <button class="mail" onclick="openInquiry('pricing','OmniHand / OmniPicker')" data-zh="询价">Request Pricing</button>
+      </div>
+
+      <div class="card prod">
+        <img class="shot" src="assets/products/c-series.jpg" alt="AGIBOT C-series cleaning robots">
+        <div class="series" data-zh="商用清洁机器人">COMMERCIAL CLEANING ROBOTS</div>
+        <h3 data-zh="C 系列（C5 / C4 / C2 / C2P）">C-Series (C5 / C4 / C2 / C2P)</h3>
+        <p data-zh="从中大型室内场景的 C5（扫、洗、干拖一体）到面向 500–1000㎡ 小型空间的 C2/C2P——超市、写字楼、交通枢纽的清洁全家桶。">From the C5 for mid-to-large indoor environments (sweeping, scrubbing and dry mopping in
+        one) to the compact C2/C2P for 500–1,000 m² spaces — cleaning coverage for supermarkets,
+        offices and transportation hubs.</p>
+        <ul>
+          <li data-zh="扫洗拖一体 · 自动回充">Sweep-scrub-mop · auto-docking</li>
+          <li data-zh="商超 · 写字楼 · 枢纽场站">Retail · offices · transit hubs</li>
+        </ul>
+        <button class="mail" onclick="openInquiry('pricing','AGIBOT C-Series')" data-zh="询价">Request Pricing</button>
+      </div>
+
+      <div class="card prod">
+        <div class="ph">📦</div>
+        <div class="series" data-zh="租赁 · RENT-A-ROBOT">RENT-A-ROBOT</div>
+        <h3 data-zh="按月租赁计划">Monthly Rental Plans</h3>
+        <p data-zh="以购置成本的一小部分即可用上以上任意机型——特别适合 6–12 个月的创新验证与初创项目。含部署、培训与维保。">Put any model above on the job at a fraction of ownership cost — ideal for 6–12-month
+        innovation pilots and startup projects. Deployment, training and maintenance included.</p>
+        <ul>
+          <li data-zh="短期灵活租期">Flexible short terms</li>
+          <li data-zh="含部署 · 培训 · 维保">Deployment · training · service included</li>
+        </ul>
+        <button class="mail" onclick="openInquiry('rental','Rent-a-Robot')" data-zh="租赁咨询">Ask about Rental</button>
+      </div>
+
+    </div>
+
+    <h2 style="margin-top:46px" data-zh="移动机器人 · Leo Rover">Mobile Robots · Leo Rover</h2>
+    <div class="grid g2" style="margin-top:20px">
+
+      <div class="card prod">
+        <img class="shot" src="assets/products/leo-rover.jpg" alt="Leo Rover 1.9">
+        <div class="series" data-zh="开源 4×4 移动机器人">OPEN-SOURCE 4×4 MOBILE ROBOT</div>
+        <h3>Leo Rover 1.9</h3>
+        <p data-zh="由火星车原型设计团队 Fictionlab 打造的开源四驱移动机器人平台（现售 1.9 开发者套件）：灵活、敏捷、模块化，全天候防水结构、基于 ROS、内置 Web 控制界面与实时视频流，被 JPL、哈佛与欧洲航天局等机构实测采用。">The open-source 4×4 mobile robot from Fictionlab — the designers of Mars rover
+        prototypes (currently the v1.9 Developer Kit). Versatile, agile and modular:
+        weatherproof, ROS-based, with built-in web UI and live video streaming. Field-proven
+        by JPL, Harvard and ESA among others.</p>
+        <ul>
+          <li data-zh="IP55 防护 · 5kg 负载 · ROS 2">IP55-rated · 5 kg payload · ROS 2</li>
+          <li data-zh="原型开发 · 教育 · 户外实验">Prototyping · education · outdoor testing</li>
+        </ul>
+        <div class="usbadge" data-zh="🇺🇸 美国本土发货">🇺🇸 Ships from the US</div>
+        <div class="price" data-zh="开发者套件 $5,500 · 整机 $6,300 <small>美元</small>">Developer Kit $5,500 · Assembled $6,300 <small>USD</small></div>
+        <a class="ext-link" href="https://fictionlab.pl/shop/leo-rover-1-9/" target="_blank" rel="noopener" data-zh="产品详情 ↗">Product details ↗</a>
+        <button class="mail" onclick="openInquiry('pricing','Leo Rover 1.9')" data-zh="询价">Request Pricing</button>
+      </div>
+
+      <div class="card prod">
+        <img class="shot" src="assets/products/raph-rover.jpg" alt="Raph Rover 1.0">
+        <div class="series" data-zh="专业级 UGV 平台">PROFESSIONAL UGV PLATFORM</div>
+        <h3>Raph Rover 1.0</h3>
+        <p data-zh="Fictionlab 面向高要求项目的专业级无人地面平台：坚固、可靠、耐候，为更大负载与更严苛的测试场景而生——适合高阶科研与工业级部署。">Fictionlab's professional unmanned ground vehicle for demanding projects: solid,
+        robust and resistant, engineered for heavier payloads and tougher, repeatable testing —
+        the step up for advanced R&amp;D and industrial deployments.</p>
+        <ul>
+          <li data-zh="10kg 负载 · 1.8 m/s · ROS 2">10 kg payload · 1.8 m/s · ROS 2</li>
+          <li data-zh="工业验证 · 高阶科研">Industrial validation · advanced R&amp;D</li>
+        </ul>
+        <div class="usbadge" data-zh="🇺🇸 美国本土发货">🇺🇸 Ships from the US</div>
+        <div class="price" data-zh="整机（已组装调校）$14,800 <small>美元</small>">Assembled &amp; calibrated $14,800 <small>USD</small></div>
+        <a class="ext-link" href="https://fictionlab.pl/shop/raph-rover-1-0/" target="_blank" rel="noopener" data-zh="产品详情 ↗">Product details ↗</a>
+        <button class="mail" onclick="openInquiry('pricing','Raph Rover 1.0')" data-zh="询价">Request Pricing</button>
+      </div>
+
+    </div>
+
+    <h2 style="margin-top:46px" data-zh="光学动作捕捉 · CHINGMU 青瞳视觉">Motion Capture · CHINGMU</h2>
+    <div class="grid g2" style="margin-top:20px">
+
+      <div class="card prod">
+        <img class="shot" src="assets/products/chingmu-k.jpg" alt="CHINGMU K Series motion-capture camera">
+        <div class="series" data-zh="旗舰光学动捕相机">FLAGSHIP OPTICAL MOCAP CAMERA</div>
+        <h3 data-zh="K 系列">K Series</h3>
+        <p data-zh="CHINGMU 精度最高的旗舰动捕相机系列：亚毫米级光学追踪，支撑从科研级测量到大空间多人实时捕捉——曾创下 100 人同场实时动捕的世界纪录（5,300 标记点 · 1,000㎡ · 120fps）。">CHINGMU's highest-accuracy flagship capture camera: sub-millimeter optical tracking,
+        from research-grade measurement to large-volume multi-actor capture — the system behind
+        the 100-person real-time world record (5,300 markers · 1,000 m² · 120 fps).</p>
+        <ul>
+          <li data-zh="亚毫米级精度 · 大空间多人">Sub-millimeter accuracy · large volumes</li>
+          <li data-zh="人形评测 · 遥操作 · 数据采集">Humanoid evaluation · teleop · data capture</li>
+        </ul>
+        <div class="usbadge" data-zh="🇺🇸 美国本土发货">🇺🇸 We ship in the US</div>
+        <a class="ext-link" href="https://en.chingmu.com/product/10100.html" target="_blank" rel="noopener" data-zh="产品详情 ↗">Product details ↗</a>
+        <button class="mail" onclick="openInquiry('pricing','CHINGMU K Series')" data-zh="询价">Request Pricing</button>
+      </div>
+
+      <div class="card prod">
+        <img class="shot" src="assets/products/chingmu-pulseh.png" alt="CHINGMU Pulse H optical-inertial fusion glove">
+        <div class="series" data-zh="光惯融合数据手套">OPTICAL-INERTIAL FUSION GLOVE</div>
+        <h3 data-zh="Pulse H 手套">Pulse H Glove</h3>
+        <p data-zh="专业级多模态数据手套：光学与惯性融合算法实现高精度、低延迟的手指捕捉，在遮挡与复杂环境下依然稳定——是灵巧手示教、遥操作与具身智能训练数据的理想采集工具。">A professional multimodal data glove: optical-inertial fusion delivers high-precision,
+        low-latency finger capture that stays stable through occlusion and drift — ideal for
+        dexterous-hand teaching, teleoperation and embodied-AI training data.</p>
+        <ul>
+          <li data-zh="高精度 · 低延迟 · 抗遮挡">High precision · low latency · occlusion-robust</li>
+          <li data-zh="灵巧手 · 遥操作 · AI 训练数据">Dexterous hands · teleop · AI training data</li>
+        </ul>
+        <div class="usbadge" data-zh="🇺🇸 美国本土发货">🇺🇸 We ship in the US</div>
+        <a class="ext-link" href="https://www.chingmu.com/list/82.html" target="_blank" rel="noopener" data-zh="产品详情 ↗">Product details ↗</a>
+        <button class="mail" onclick="openInquiry('pricing','CHINGMU Pulse H Glove')" data-zh="询价">Request Pricing</button>
+      </div>
+
+    </div>
+
+    <p style="margin-top:26px;color:var(--faint);font-size:13px"
+       data-zh="AGIBOT 产品信息与图片来自《AGIBOT Product Brochure 2026》；Leo Rover 与 CHINGMU 产品信息来自其官方发布，最新规格欢迎向我们确认。Rover 美元价格为按 Fictionlab 官方定价换算的参考价，正式报价请询价确认。我们售出或租出的每一台机器人，都由我们完成部署、培训并提供持续维保。软件平台（Genie Sim 3.0 / Genie Studio）咨询亦可来函。">
+       AGIBOT product information and imagery from the AGIBOT Product Brochure 2026; Leo Rover
+       and CHINGMU details from their official releases — always check with us for the latest
+       specs. Rover USD prices are indicative, converted from Fictionlab list prices — request
+       a firm quote for current pricing. Every robot we sell or rent leaves our shop deployed, trained and backed by our
+       service team. Ask us also about the Genie Sim 3.0 / Genie Studio software platforms.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fineprint" data-zh="© 2026 Hitch Interactive。保留所有权利。AGIBOT 为其各自所有者之商标。">© 2026 Hitch Interactive. All rights reserved. AGIBOT is a trademark of its respective owner.</div>
+  </div>
+</footer>
+
+</body>
+</html>

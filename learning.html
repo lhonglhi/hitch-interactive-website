@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Academy — Hitch Interactive</title>
+<link rel="stylesheet" href="assets/style.css">
+<link rel="icon" href="assets/logo-mark.svg">
+<script src="assets/i18n.js"></script>
+<script src="assets/inquiry.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html"><img src="assets/logo-mark.svg" alt="Hitch Interactive"></a>
+    <nav><ul>
+      <li><a class="ext" href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="赛事">Competition</a></li>
+      <li><a class="active" href="learning.html" data-zh="学院">Academy</a></li>
+      <li><a href="superstore.html" data-zh="机器人超市">Superstore</a></li>
+      <li><a href="services.html" data-zh="服务">Services</a></li>
+      <li><a class="ext" href="https://github.com/hitchopen" target="_blank" rel="noopener" data-zh="开源">Open Source</a></li>
+      <li><a class="cta" href="#" onclick="return openInquiry('general')" data-zh="联系销售">Contact Sales</a></li>
+      <li><button id="langToggle" class="langbtn" onclick="toggleLang()">中文</button></li>
+    </ul></nav>
+  </div>
+</header>
+
+<section class="band-lime">
+  <div class="wrap">
+    <div class="kicker" data-zh="学院 · HITCH ACADEMY">Academy · Hitch Academy</div>
+    <h1 style="font-size:40px" data-zh="为具身智能时代培养人才">Training talent for the Embodied-AI era</h1>
+    <p class="lead" data-zh="Hitch Academy 课程由世界级教育者策划，在 AI、机器人、AR/VR 与元宇宙等前沿领域提供一流的学习体验。从中学 STEM 到大学与专业培训，我们的课程与 Hitch Open 赛事和开源技术栈无缝衔接——学以致用，赛以验学。">The Hitch Academy curriculum is curated by world-class educators to offer a premier learning
+    experience in cutting-edge technology disciplines — AI, robotics, AR/VR and the metaverse.
+    From K-12 STEM through university and professional training, every course connects to the
+    Hitch Open competitions and our open-source stack: learn it, then race it.</p>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <h2 data-zh="三大培养路径">Three learning tracks</h2>
+    <div class="grid g3" style="margin-top:28px">
+      <div class="card">
+        <div class="icon">🤖</div>
+        <div class="tag">HITCH Robotics</div>
+        <h3 data-zh="具身智能与自动驾驶">Embodied AI &amp; Autonomy</h3>
+        <p data-zh="源于加州伯克利 ROAR 平台的课程体系：Python 与 AI 基础、3D 感知、自动驾驶竞速、人形机器人技能训练。全部构建于我们的开源技术栈，课程成果可直接参加 Hitch Open 赛事。">Born from UC Berkeley's ROAR platform: Python &amp; AI foundations, 3D perception,
+        autonomous racing, and humanoid skill training — built on our open-source stack
+        and battle-tested in Hitch Open competitions.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🕶️</div>
+        <div class="tag" data-zh="元宇宙大师课">Metaverse Master Class</div>
+        <h3 data-zh="AR/VR 与交互开发">AR/VR &amp; Interactive Development</h3>
+        <p data-zh="从 Unity 引擎入门到 AR/VR 与元宇宙基础，再到次世代 3D 角色创作——由一线行业专家执教的进阶课程序列。">From Unity fundamentals to the science of AR/VR and next-gen 3D character creation —
+        an advanced sequence taught by front-line industry experts.</p>
+      </div>
+      <div class="card">
+        <div class="icon">🏫</div>
+        <div class="tag" data-zh="校园与企业">Campus &amp; Enterprise</div>
+        <h3 data-zh="AI 实验室与专业培训">AI Labs &amp; Professional Training</h3>
+        <p data-zh="校园物理智能实验室（AI Space）整体方案：课程、师资培训与年度赛事参与。同时为企业与科研机构提供具身智能时代的专业培训——已与加州伯克利等 11 所合作高校深度协作。">Turn-key campus Physical-AI labs — curriculum, teacher training and annual competition
+        entry — plus professional training for businesses and research institutions, in
+        partnership with UC Berkeley and our 11 partner universities.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-sky">
+  <div class="wrap">
+    <h2 data-zh="信任，来自赛场与讲台">An academy trusted on the world stage</h2>
+    <p class="lead" data-zh="Hitch Academy 的老师与课程，正是 Hitch Open 世界AI锦标赛与冠军战队背后的团队——与 11 所顶尖高校并肩教学与竞技。">The same team behind the Hitch Open World AI Championships and its champion crews
+    teaches every Hitch Academy course — side by side with 11 leading universities.</p>
+    <div class="stats" style="margin-top:8px">
+      <div class="stat"><b>1B+</b><span data-zh="媒体触达用户">users reached</span></div>
+      <div class="stat"><b>500K+</b><span data-zh="现场观众">on-site spectators</span></div>
+      <div class="stat"><b>11</b><span data-zh="合作高校">partner universities</span></div>
+      <div class="stat"><b>#1</b><span data-zh="世界冠军头衔">world championship title</span></div>
+    </div>
+    <div class="uniband" style="margin-top:34px">
+      <img src="assets/universities/ucberkeley.png" alt="UC Berkeley" title="UC Berkeley">
+      <img src="assets/universities/hku.png" alt="The University of Hong Kong" title="The University of Hong Kong">
+      <img src="assets/universities/tsinghua.png" alt="Tsinghua University" title="Tsinghua University">
+      <img src="assets/universities/sjtu.png" alt="Shanghai Jiao Tong University" title="Shanghai Jiao Tong University">
+      <img src="assets/universities/fudan.png" alt="Fudan University" title="Fudan University">
+      <img src="assets/universities/zhejiang.png" alt="Zhejiang University" title="Zhejiang University">
+      <img src="assets/universities/xjtu.png" alt="Xi'an Jiaotong University" title="Xi'an Jiaotong University">
+      <img src="assets/universities/jilin.png" alt="Jilin University" title="Jilin University">
+      <img src="assets/universities/hunan.png" alt="Hunan University" title="Hunan University">
+      <img src="assets/universities/hainan.png" alt="Hainan University" title="Hainan University">
+      <img src="assets/universities/wut.png" alt="Wuhan University of Technology" title="Wuhan University of Technology">
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 data-zh="人工智能课程">Artificial Intelligence courses</h2>
+    <p class="lead" data-zh="编号为课程级别；完整课表与开课时间请联系我们。">Numbers indicate level; contact us for full schedules.</p>
+
+    <div class="course">
+      <h3>1-1 · Introduction to Python: I. Basic Programming</h3>
+      <div class="meta" data-zh="10 讲 · 无先修要求">10 lectures · Prerequisites: none</div>
+      <p data-zh="面向科学计算与 AI 应用的现代化 Python 入门，为数据科学、机器学习与机器人方向打下坚实基础。">A modern, streamlined foundation in coding for scientific computing and AI — the
+      launchpad for data science, machine learning and robotics.</p>
+    </div>
+    <div class="course">
+      <h3>1-2 · Introduction to Python: II. Data Structures and Algorithms</h3>
+      <div class="meta" data-zh="10 讲 · 先修：1-1">10 lectures · Prerequisites: 1-1</div>
+      <p data-zh="经典数据结构与算法：排序、搜索、树结构与动态规划——AI 与机器人开发的通用语言。">Classic data structures and algorithms — sorting, search, trees and dynamic
+      programming — the common language of AI and robotics development.</p>
+    </div>
+    <div class="course">
+      <h3>2-1 · Python Scientific Programming</h3>
+      <div class="meta" data-zh="10 讲 · 先修：1-1, 1-2">10 lectures · Prerequisites: 1-1, 1-2</div>
+      <p data-zh="复杂数据分析与可视化、线性/非线性回归与分类。">Complex data analysis and visualization, plus regression and classification in
+      linear/nonlinear problems.</p>
+    </div>
+    <div class="course">
+      <h3>2-2 · Learning Computer Vision in Python</h3>
+      <div class="meta" data-zh="10 讲 · 先修：1-1, 1-2, 2-1">10 lectures · Prerequisites: 1-1, 1-2, 2-1</div>
+      <p data-zh="对标一流大学工程专业本科水平的计算机视觉课程：从成像与特征到目标检测、跟踪与三维感知。">Undergraduate-level computer vision as taught in leading engineering programs — from
+      imaging and features to detection, tracking and 3D sensing.</p>
+    </div>
+    <div class="course">
+      <h3>3-1 · Introduction to Deep Learning</h3>
+      <div class="meta" data-zh="10 讲 · 先修：2-1, 2-2">10 lectures · Prerequisites: 2-1, 2-2</div>
+      <p data-zh="从感知机到深度卷积网络与强化学习——现代机器学习的核心方法。">From perceptrons to deep convolutional networks and reinforcement learning — the
+      modern core of machine learning.</p>
+    </div>
+    <div class="course">
+      <h3>3-2 · Introduction to Robotics and Autonomous Driving</h3>
+      <div class="meta" data-zh="10 讲 · 先修：2-1, 2-2, 3-1">10 lectures · Prerequisites: 2-1, 2-2, 3-1</div>
+      <p data-zh="以自动驾驶为主线的机器人入门：车辆动力学、PID 控制、循线与避障、强化学习控制器，并在 CARLA 仿真与实车模型上调试。">Robotics through the lens of autonomous driving — vehicle dynamics, PID control, lane
+      following, collision avoidance and RL-trained controllers, tuned in CARLA and on RC
+      vehicles.</p>
+    </div>
+
+    <h2 style="margin-top:44px" data-zh="元宇宙大师课">Metaverse Master Class</h2>
+    <div class="course" style="margin-top:20px">
+      <h3>2-3 · Learning Unity Game Engine</h3>
+      <div class="meta" data-zh="10 讲 · 无先修要求">10 lectures · Prerequisites: none</div>
+      <p data-zh="掌握 Unity 界面、GameObject 组件、入门级 C# 脚本与 2D/3D 素材导入，独立完成 2D/3D 项目。">Unity interface, GameObject components, entry-level C#, interactive audio and 2D/3D
+      art import — finishing with your own buildable project.</p>
+    </div>
+    <div class="course">
+      <h3>2-4 · Unity Programming</h3>
+      <div class="meta" data-zh="10 讲 · 先修：2-3">10 lectures · Prerequisites: 2-3</div>
+      <p data-zh="Unity 物理引擎（Collider、Trigger、Rigidbody）与 C# 进阶，期末交付可玩 Demo。">Physics-engine elements (Collider, Trigger, Rigidbody) and deeper C# — final
+      deliverable: a playable demo.</p>
+    </div>
+    <div class="course">
+      <h3>3-4 · Foundation of AR/VR and Metaverse</h3>
+      <div class="meta" data-zh="10 讲 · 先修：2-2, 2-3, 2-4">10 lectures · Prerequisites: 2-2, 2-3, 2-4</div>
+      <p data-zh="沉浸式 3D 感知背后的科学：可穿戴设备如何用传感器与显示技术精准模拟人类三维感知。">The science of immersive 3D perception — how wearables use sensors and displays to
+      stimulate human 3D perception accurately.</p>
+    </div>
+    <div class="course">
+      <h3>3-5 · Creative Design of 3D World — Next-Gen Character Creation</h3>
+      <div class="meta" data-zh="10 讲 · 先修：2-3">10 lectures · Prerequisites: 2-3</div>
+      <p data-zh="AAA 级角色的建模、贴图与实时渲染全流程，作品直接进入个人作品集。">AAA-quality character modeling, texturing and real-time rendering — portfolio-ready
+      work.</p>
+    </div>
+
+    <h2 style="margin-top:44px" data-zh="项目与训练营">Programs &amp; camps</h2>
+    <div class="grid g3" style="margin-top:20px">
+      <div class="card">
+        <div class="tag">ROAR Academy</div>
+        <h3 data-zh="伯克利暑期/寒假训练营">Summer / Winter Camp</h3>
+        <p data-zh="面向 10–12 年级学生的两周高强度项目：与伯克利教师和研究者一起学习 Python 与自动驾驶算法，结营颁发伯克利官方证书。">A rigorous two-week program for grades 10–12 — Python and introductory autonomous-driving
+        algorithms with Berkeley faculty and researchers; official Berkeley camp certificate.</p>
+      </div>
+      <div class="card">
+        <div class="tag" data-zh="AGIBOT 官方合作">In partnership with AGIBOT</div>
+        <h3 data-zh="具身智能实训">Embodied AI Training</h3>
+        <p data-zh="与全球人形机器人出货量第一（Omdia 2025）的 AGIBOT 联合实训：在真实的 A2/X2 人形机器人与 OmniHand 灵巧手上动手学习，掌握 Genie Studio 一站式开发平台、遥操作与数据采集全流程，并使用百万级真机数据集 AgiBot World 训练具身智能技能。">Hands-on training with AGIBOT — the world's No. 1 humanoid maker by 2025 shipments
+        (Omdia). Learn on real A2/X2 humanoids and OmniHand dexterous hands, master the Genie
+        Studio one-stop development platform, teleoperation and data-collection workflows, and
+        train skills on AgiBot World, the million-episode real-robot dataset.</p>
+      </div>
+      <div class="card">
+        <div class="tag" data-zh="高管教育">Executive Education</div>
+        <h3 data-zh="高管与企业定制项目">Executive &amp; Corporate Programs</h3>
+        <p data-zh="Las Vegas（AI）、Monza（AI）等高管课程与企业定制培训——为具身智能时代重塑组织能力。">Las Vegas (AI) and Monza (AI) executive sessions plus customized corporate training —
+        rebuilding organizational capability for the embodied-AI era.</p>
+      </div>
+    </div>
+
+    <div class="strip" style="margin-top:36px">
+      <p data-zh="<b>开班咨询与校园合作：</b>课程可按学校与企业需求定制，支持中英文授课。"><b>Enrollment &amp; campus partnerships:</b> courses can be tailored for schools
+      and enterprises, taught in English or Chinese.</p>
+      <a class="btn primary" href="#" onclick="return openInquiry('courses')" data-zh="咨询课程">Ask about courses</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fineprint" data-zh="© 2026 Hitch Interactive。保留所有权利。">© 2026 Hitch Interactive. All rights reserved.</div>
+  </div>
+</footer>
+
+</body>
+</html>
