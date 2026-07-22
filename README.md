@@ -3,7 +3,20 @@
 Static bilingual (EN/中文) site. No build step.
 
 Repo: https://github.com/lhonglhi/hitch-interactive-website (this folder is the repo root).
-Live site hitchinteractive.com is still the old WordPress version — no auto-deploy hooked up yet.
+
+## Deploy (live at hitchinteractive.com since 2026-07-22)
+Same GoDaddy cPanel git flow as hitchopen.ai — push to the `production` remote and
+`.cpanel.yml` copies the site into `~/public_html/` (the account's main-domain docroot):
+
+    git remote add production ssh://zl8tgqhjlwtn@208.109.68.15/home/zl8tgqhjlwtn/repositories/hitch-interactive-website
+    git push production main
+
+Notes:
+- Sucuri WAF fronts the domain; after a deploy, changed pages may serve a cached
+  copy for a few hours unless purged in the Sucuri dashboard.
+- The old WordPress site is archived on the server at ~/wp-archive-hitchinteractive-20260722/
+  (files + htaccess); DB untouched in MySQL. Full backups also in Website/备份/ locally.
+- GitHub Pages preview: https://lhonglhi.github.io/hitch-interactive-website/
 
 ## Launch at localhost
     cd website
