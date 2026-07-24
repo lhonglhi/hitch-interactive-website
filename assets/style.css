@@ -68,7 +68,12 @@ h3{color:var(--ink)}
 .card h3{font-size:20px;margin:8px 0 10px}
 .card p{color:var(--muted);font-size:14.5px}
 .card .go{display:inline-block;margin-top:14px;font-weight:700;font-size:14px}
-.icon{font-size:30px;margin-bottom:12px}
+.icon{margin-bottom:14px;color:var(--red)}
+.icon svg{width:34px;height:34px;display:block}
+.card.tint-blue .icon{color:var(--hi-blue)}
+.card.tint-orange .icon{color:var(--hi-orange)}
+.card.tint-green .icon{color:var(--hi-green)}
+.card.tint-lime .icon{color:#7FA800}
 
 /* stats */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
