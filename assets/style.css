@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap');
-/* Hitch Interactive — style guide adopted from hitchinteractive.com
-   Open Sans type, #333 ink, Hitch red accent, bold color-block sections. */
+/* Hitch Interactive — visual v2 "carbon & signal"
+   Light content sections; carbon-black hero/stats/footer; lime #C4FF2F as
+   signal accent (dark surfaces only); blue-violet #4F71FF as primary.
+   NOTE: legacy var names --red/--gold now point at the blue primary so every
+   page inherits the rebrand without markup changes. */
 :root{
   --bg:#FFFFFF; --alt:#F6F7F9; --ink:#333333; --muted:#5C6675; --faint:#9AA5B1;
-  --red:#D7262C; --red-dk:#B81E24; --line:#E5E8EC; --card:#FFFFFF; --gold:#B97E1F;
+  --red:#4F71FF; --red-dk:#3A5AE8; --line:#E5E8EC; --card:#FFFFFF; --gold:#4F71FF;
+  --carbon:#0E1116; --carbon-2:#161B22; --carbon-line:#252C36;
+  --lime:#C4FF2F;
   --hi-cream:#FFFCF7; --hi-lime:#C4FF2F; --hi-green:#00C566; --hi-blue:#4F71FF;
-  --hi-orange:#FF6400; --hi-sky:#D1ECFF; --btn-dark:#333333;
+  --hi-orange:#FF6400; --hi-sky:#D1ECFF; --btn-dark:#16191E;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -28,16 +33,16 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdro
 .ext:after{content:" ↗";font-size:12px;color:var(--faint)}
 
 /* hero (photo with dark overlay, white text — like the site's video hero) */
-.hero{position:relative;min-height:520px;display:flex;align-items:center;overflow:hidden;background:#0E1A2B}
+.hero{position:relative;min-height:520px;display:flex;align-items:center;overflow:hidden;background:var(--carbon)}
 .hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.42}
 .hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,16,28,.82) 0%,rgba(10,16,28,.35) 70%)}
 .hero .wrap{position:relative;padding-top:70px;padding-bottom:70px}
-.hero .kicker{color:#FFD9DA}
+.hero .kicker{color:var(--lime)}
 .hero h1{color:#fff}
 .hero .sub{color:#E7ECF2}
 .kicker{color:var(--red);font-weight:700;letter-spacing:3px;font-size:13px;text-transform:uppercase}
 h1{font-size:50px;font-weight:700;line-height:1.15;color:var(--ink);margin:14px 0 18px;max-width:850px}
-h1 .r{color:#FF6B6E}
+h1 .r{color:var(--lime)}
 .sub{font-size:18px;color:var(--muted);max-width:760px}
 .btns{margin-top:28px;display:flex;gap:14px;flex-wrap:wrap}
 .btn{display:inline-block;padding:13px 26px;border-radius:2px;font-weight:700;font-size:15px}
@@ -68,12 +73,12 @@ h3{color:var(--ink)}
 /* stats */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:left}
 .stats.s5{grid-template-columns:repeat(5,1fr)}
-.stat b{display:block;font-size:36px;color:var(--red)}
+.stat b{display:block;font-size:36px;color:var(--red);font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;letter-spacing:-.5px}
 .stat span{color:var(--muted);font-size:13.5px}
 
 /* catalog */
 .prod{display:flex;flex-direction:column}
-.prod .ph{height:150px;border-radius:10px;background:linear-gradient(135deg,#F1F3F6,#FBEAEA);display:flex;align-items:center;justify-content:center;font-size:44px;margin-bottom:16px}
+.prod .ph{height:150px;border-radius:10px;background:linear-gradient(135deg,#EEF1F5,#E4E9F0);display:flex;align-items:center;justify-content:center;font-size:44px;margin-bottom:16px}
 .prod .series{color:var(--gold);font-size:12px;font-weight:700;letter-spacing:1.5px}
 .prod ul{list-style:none;margin:10px 0 14px;color:var(--muted);font-size:13.5px}
 .prod ul li:before{content:"— ";color:var(--red)}
@@ -95,12 +100,12 @@ section.alt .strip{background:#fff}
 .strip b{color:var(--ink)}
 
 /* footer */
-footer{border-top:1px solid var(--line);padding:44px 0;color:var(--muted);font-size:14px;background:#EEEEEE}
+footer{border-top:1px solid var(--carbon-line);padding:44px 0;color:#9AA5B1;font-size:14px;background:var(--carbon)}
 footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px;margin-bottom:26px}
-footer h4{color:var(--ink);margin-bottom:10px;font-size:15px}
-footer a{display:block;color:var(--muted);margin-bottom:6px}
-footer a:hover{color:var(--red)}
-.fineprint{border-top:1px solid var(--line);padding-top:18px;font-size:12.5px;color:var(--faint)}
+footer h4{color:#fff;margin-bottom:10px;font-size:15px}
+footer a{display:block;color:#B8C2CC;margin-bottom:6px}
+footer a:hover{color:var(--lime)}
+.fineprint{border-top:1px solid var(--carbon-line);padding-top:18px;font-size:12.5px;color:#6B7684}
 
 /* language toggle */
 .langbtn{border:1.5px solid var(--btn-dark);color:var(--btn-dark);background:none;border-radius:2px;padding:8px 14px;font-weight:700;font-size:14px;cursor:pointer;margin-left:8px}
@@ -111,7 +116,7 @@ footer a:hover{color:var(--red)}
 .news-track{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:14px;-webkit-overflow-scrolling:touch;scrollbar-width:thin;scrollbar-color:var(--line) transparent}
 .news-card{scroll-snap-align:start;flex:0 0 340px;background:#fff;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 2px 10px rgba(20,30,45,.06)}
 .news-card img{height:170px;width:100%;object-fit:cover}
-.news-card .ph{height:170px;display:flex;align-items:center;justify-content:center;font-size:46px;background:linear-gradient(135deg,#F1F3F6,#FBEAEA)}
+.news-card .ph{height:170px;display:flex;align-items:center;justify-content:center;font-size:46px;background:linear-gradient(135deg,#EEF1F5,#E4E9F0)}
 .news-card .body{padding:18px 20px 20px;display:flex;flex-direction:column;flex:1}
 .news-card .date{color:var(--gold);font-size:12px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase}
 .news-card h3{font-size:17px;margin:8px 0 8px;line-height:1.35}
@@ -154,38 +159,35 @@ footer a:hover{color:var(--red)}
 .uniband img:hover{opacity:1}
 @media(max-width:700px){.uniband{gap:22px 26px}.uniband img{height:54px}}
 
-/* ===== hitchinteractive.com color blocks ===== */
-section.band-cream{background:var(--hi-cream)}
-section.band-sky{background:var(--hi-sky)}
-section.band-lime{background:var(--hi-lime)}
-section.band-green{background:var(--hi-green)}
-section.band-blue{background:var(--hi-blue)}
-section.band-orange{background:var(--hi-orange)}
-section.band-black{background:#000}
-/* light text on saturated bands */
-section.band-green h1,section.band-blue h1,section.band-orange h1,section.band-black h1,
-section.band-green h2,section.band-blue h2,section.band-orange h2,section.band-black h2{color:#fff}
-section.band-green .lead,section.band-blue .lead,section.band-orange .lead,section.band-black .lead,
-section.band-green .kicker,section.band-blue .kicker,section.band-orange .kicker,section.band-black .kicker{color:rgba(255,255,255,.92)}
-/* dark text on lime / sky / cream */
-section.band-lime .kicker,section.band-sky .kicker,section.band-cream .kicker{color:#333}
-section.band-lime .lead,section.band-sky .lead{color:#2A3240}
-/* black band strip */
-section.band-black .strip{background:#111;border-color:#2A2A2A}
+/* ===== section bands — v2: candy colors retired, carbon takes over =====
+   band-cream: light gray content band (news).
+   band-sky:   carbon "telemetry" band (trust stats) — lime numbers, white heads.
+   band-lime/green/orange (subpage headers) + band-black (CTA): unified carbon. */
+section.band-cream{background:var(--alt)}
+section.band-sky,section.band-lime,section.band-green,section.band-blue,section.band-orange,section.band-black{background:var(--carbon)}
+/* light text on carbon bands */
+section.band-sky h1,section.band-lime h1,section.band-green h1,section.band-blue h1,section.band-orange h1,section.band-black h1,
+section.band-sky h2,section.band-lime h2,section.band-green h2,section.band-blue h2,section.band-orange h2,section.band-black h2{color:#fff}
+section.band-sky .lead,section.band-lime .lead,section.band-green .lead,section.band-blue .lead,section.band-orange .lead,section.band-black .lead{color:#B8C2CC}
+section.band-sky .kicker,section.band-lime .kicker,section.band-green .kicker,section.band-blue .kicker,section.band-orange .kicker,section.band-black .kicker{color:var(--lime)}
+section.band-cream .kicker{color:var(--red)}
+/* trust band: lime telemetry numbers, white logo plate */
+section.band-sky .stat b{color:var(--lime)}
+section.band-sky .stat span{color:#9AA5B1}
+section.band-sky .uniband{background:#fff;border-radius:14px;padding:26px 30px}
+/* carbon band strip + buttons */
+section.band-black .strip{background:var(--carbon-2);border-color:var(--carbon-line)}
 section.band-black .strip p{color:#C9D2DC}
 section.band-black .strip b{color:#fff}
-section.band-black .btn.ghost{border-color:#fff;color:#fff}
-section.band-black .btn.ghost:hover{background:#fff;color:#111}
-/* brand-tinted cards (Four ways in) */
-.card.tint{border:none;box-shadow:0 6px 20px rgba(20,30,45,.10)}
+section.band-sky .btn.ghost,section.band-lime .btn.ghost,section.band-green .btn.ghost,section.band-orange .btn.ghost,section.band-black .btn.ghost{border-color:#fff;color:#fff}
+section.band-sky .btn.ghost:hover,section.band-lime .btn.ghost:hover,section.band-green .btn.ghost:hover,section.band-orange .btn.ghost:hover,section.band-black .btn.ghost:hover{background:var(--lime);border-color:var(--lime);color:#111}
+/* brand-coded cards (Four ways in): white card + brand hue as a thin top rule */
+.card.tint{background:#fff;border:1px solid var(--line);border-top:3px solid var(--line);box-shadow:0 2px 10px rgba(20,30,45,.05)}
 .card.tint .go{font-weight:700}
-.card.tint-blue{background:var(--hi-blue)} .card.tint-orange{background:var(--hi-orange)} .card.tint-green{background:var(--hi-green)}
-.card.tint-blue h3,.card.tint-orange h3,.card.tint-green h3{color:#fff}
-.card.tint-blue p,.card.tint-orange p,.card.tint-green p{color:rgba(255,255,255,.9)}
-.card.tint-blue .tag,.card.tint-orange .tag,.card.tint-green .tag{color:rgba(255,255,255,.8)}
-.card.tint-blue .go,.card.tint-orange .go,.card.tint-green .go{color:#fff;text-decoration:underline}
-.card.tint-lime{background:var(--hi-lime)}
-.card.tint-lime h3{color:#1A1F16} .card.tint-lime p{color:#333B2A} .card.tint-lime .tag{color:#333} .card.tint-lime .go{color:#111;text-decoration:underline}
+.card.tint-blue{border-top-color:var(--hi-blue)} .card.tint-blue .tag{color:var(--hi-blue)}
+.card.tint-orange{border-top-color:var(--hi-orange)} .card.tint-orange .tag{color:var(--hi-orange)}
+.card.tint-green{border-top-color:var(--hi-green)} .card.tint-green .tag{color:var(--hi-green)}
+.card.tint-lime{border-top-color:var(--hi-lime)} .card.tint-lime .tag{color:#7FA800}
 
 /* rover price rows */
 .prod .price{font-weight:800;font-size:17px;color:var(--ink);margin:2px 0 4px}
