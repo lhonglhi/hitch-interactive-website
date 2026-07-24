@@ -172,10 +172,9 @@ section.band-sky h2,section.band-lime h2,section.band-green h2,section.band-blue
 section.band-sky .lead,section.band-lime .lead,section.band-green .lead,section.band-blue .lead,section.band-orange .lead,section.band-black .lead{color:#B8C2CC}
 section.band-sky .kicker,section.band-lime .kicker,section.band-green .kicker,section.band-blue .kicker,section.band-orange .kicker,section.band-black .kicker{color:var(--lime)}
 section.band-cream .kicker{color:var(--red)}
-/* trust band: lime telemetry numbers, white logo plate */
+/* trust band: lime telemetry numbers, white logos straight on carbon */
 section.band-sky .stat b{color:var(--lime)}
 section.band-sky .stat span{color:#9AA5B1}
-section.band-sky .uniband{background:#fff;border-radius:0;padding:26px 30px}
 /* carbon band strip + buttons */
 section.band-black .strip{background:var(--carbon-2);border-color:var(--carbon-line)}
 section.band-black .strip p{color:#C9D2DC}
