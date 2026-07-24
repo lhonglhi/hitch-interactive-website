@@ -155,10 +155,11 @@ footer a:hover{color:var(--lime)}
 .inq-prod{display:none}
 
 /* partner university logo band */
-.uniband{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:34px 42px}
-.uniband img{height:74px;width:auto;opacity:.82;transition:opacity .2s}
+.uniband{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:28px 32px}
+.uniband img{height:64px;width:auto;opacity:.82;transition:opacity .2s}
 .uniband img:hover{opacity:1}
-@media(max-width:700px){.uniband{gap:22px 26px}.uniband img{height:54px}}
+@media(max-width:1100px){.uniband{gap:24px 30px}.uniband img{height:56px}}
+@media(max-width:700px){.uniband{gap:20px 24px}.uniband img{height:46px}}
 
 /* ===== section bands — v2: candy colors retired, carbon takes over =====
    band-cream: light gray content band (news).
