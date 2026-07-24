@@ -34,8 +34,8 @@ header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdro
 
 /* hero (photo with dark overlay, white text — like the site's video hero) */
 .hero{position:relative;min-height:520px;display:flex;align-items:center;overflow:hidden;background:var(--carbon)}
-.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.42}
-.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,16,28,.82) 0%,rgba(10,16,28,.35) 70%)}
+.hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.16}
+.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(14,17,22,.9) 0%,rgba(14,17,22,.25) 65%)}
 .hero .wrap{position:relative;padding-top:70px;padding-bottom:70px}
 .hero .kicker{color:var(--lime)}
 .hero h1{color:#fff}
