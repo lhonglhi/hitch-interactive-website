@@ -73,6 +73,7 @@ h3{color:var(--ink)}
 /* stats */
 .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:left}
 .stats.s5{grid-template-columns:repeat(5,1fr)}
+.stats.s6{grid-template-columns:repeat(6,1fr)}
 .stat b{display:block;font-size:36px;color:var(--red);font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;letter-spacing:-.5px}
 .stat span{color:var(--muted);font-size:13.5px}
 
@@ -127,12 +128,12 @@ footer a:hover{color:var(--lime)}
 .news-nav button:hover{background:var(--red);color:#fff}
 
 @media(max-width:900px){
-  .g4,.g3,.stats,.stats.s5,footer .cols{grid-template-columns:repeat(2,1fr)}
+  .g4,.g3,.stats,.stats.s5,.stats.s6,footer .cols{grid-template-columns:repeat(2,1fr)}
   h1{font-size:36px}
   .nav ul a{padding:8px 10px;font-size:13.5px}
 }
 @media(max-width:600px){
-  .g4,.g3,.g2,.stats,.stats.s5,footer .cols{grid-template-columns:1fr}
+  .g4,.g3,.g2,.stats,.stats.s5,.stats.s6,footer .cols{grid-template-columns:1fr}
   .news-card{flex-basis:82vw}
 }
 
