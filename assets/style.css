@@ -71,7 +71,7 @@ h3{color:var(--ink)}
 .icon{font-size:30px;margin-bottom:12px}
 
 /* stats */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:left}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
 .stats.s5{grid-template-columns:repeat(5,1fr)}
 .stats.s6{grid-template-columns:repeat(6,1fr)}
 .stat b{display:block;font-size:36px;color:var(--red);font-family:ui-monospace,'SF Mono',Menlo,Consolas,monospace;letter-spacing:-.5px}
@@ -174,6 +174,7 @@ section.band-sky .lead,section.band-lime .lead,section.band-green .lead,section.
 section.band-sky .kicker,section.band-lime .kicker,section.band-green .kicker,section.band-blue .kicker,section.band-orange .kicker,section.band-black .kicker{color:var(--lime)}
 section.band-cream .kicker{color:var(--red)}
 /* trust band: lime telemetry numbers, white logos straight on carbon */
+section.band-sky h2,section.band-sky .lead{text-align:center;margin-left:auto;margin-right:auto}
 section.band-sky .stat b{color:var(--lime)}
 section.band-sky .stat span{color:#9AA5B1}
 /* carbon band strip + buttons */
