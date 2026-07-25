@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Robotics Superstore — Hitch Interactive</title>
 <link rel="stylesheet" href="assets/style.css">
-<link rel="icon" href="assets/logo-mark.svg">
+<link rel="icon" href="assets/favicon.svg">
 <script src="assets/i18n.js"></script>
 <script src="assets/inquiry.js"></script>
 </head>
@@ -13,16 +13,18 @@
 
 <header>
   <div class="wrap nav">
-    <a class="logo" href="index.html"><img src="assets/logo-mark.svg" alt="Hitch Interactive"></a>
+    <a class="logo" href="index.html"><img src="assets/logo-mark-white.svg" alt="Hitch Interactive"></a>
     <nav><ul>
       <li><a class="ext" href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="赛事">Competition</a></li>
       <li><a href="learning.html" data-zh="学院">Academy</a></li>
       <li><a class="active" href="superstore.html" data-zh="机器人超市">Superstore</a></li>
       <li><a href="services.html" data-zh="服务">Services</a></li>
       <li><a class="ext" href="https://github.com/hitchopen" target="_blank" rel="noopener" data-zh="开源">Open Source</a></li>
-      <li><a class="cta" href="#" onclick="return openInquiry('general')" data-zh="联系销售">Contact Sales</a></li>
-      <li><button id="langToggle" class="langbtn" onclick="toggleLang()">中文</button></li>
     </ul></nav>
+    <div class="actions">
+      <a class="cta" href="#" onclick="return openInquiry('general')" data-zh="联系销售">Contact Sales</a>
+      <button id="langToggle" class="langbtn" onclick="toggleLang()">中文</button>
+    </div>
   </div>
 </header>
 

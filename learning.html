@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Academy — Hitch Interactive</title>
 <link rel="stylesheet" href="assets/style.css">
-<link rel="icon" href="assets/logo-mark.svg">
+<link rel="icon" href="assets/favicon.svg">
 <script src="assets/i18n.js"></script>
 <script src="assets/inquiry.js"></script>
 </head>
@@ -13,16 +13,18 @@
 
 <header>
   <div class="wrap nav">
-    <a class="logo" href="index.html"><img src="assets/logo-mark.svg" alt="Hitch Interactive"></a>
+    <a class="logo" href="index.html"><img src="assets/logo-mark-white.svg" alt="Hitch Interactive"></a>
     <nav><ul>
       <li><a class="ext" href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="赛事">Competition</a></li>
       <li><a class="active" href="learning.html" data-zh="学院">Academy</a></li>
       <li><a href="superstore.html" data-zh="机器人超市">Superstore</a></li>
       <li><a href="services.html" data-zh="服务">Services</a></li>
       <li><a class="ext" href="https://github.com/hitchopen" target="_blank" rel="noopener" data-zh="开源">Open Source</a></li>
-      <li><a class="cta" href="#" onclick="return openInquiry('general')" data-zh="联系销售">Contact Sales</a></li>
-      <li><button id="langToggle" class="langbtn" onclick="toggleLang()">中文</button></li>
     </ul></nav>
+    <div class="actions">
+      <a class="cta" href="#" onclick="return openInquiry('general')" data-zh="联系销售">Contact Sales</a>
+      <button id="langToggle" class="langbtn" onclick="toggleLang()">中文</button>
+    </div>
   </div>
 </header>
 
@@ -42,7 +44,7 @@
     <h2 data-zh="三大培养路径">Three learning tracks</h2>
     <div class="grid g3" style="margin-top:28px">
       <div class="card">
-        <div class="icon">🤖</div>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path fill-rule="evenodd" d="M4 7.5h16V19H4zM6.6 10.8h10.8v3.4H6.6z"/><path d="M11.2 4h1.6v3.5h-1.6z"/><circle cx="12" cy="3.2" r="1.1"/></svg></div>
         <div class="tag">HITCH Robotics</div>
         <h3 data-zh="具身智能与自动驾驶">Embodied AI &amp; Autonomy</h3>
         <p data-zh="源于加州伯克利 ROAR 平台的课程体系：Python 与 AI 基础、3D 感知、自动驾驶竞速、人形机器人技能训练。全部构建于我们的开源技术栈，课程成果可直接参加 Hitch Open 赛事。">Born from UC Berkeley's ROAR platform: Python &amp; AI foundations, 3D perception,
@@ -50,14 +52,14 @@
         and battle-tested in Hitch Open competitions.</p>
       </div>
       <div class="card">
-        <div class="icon">🕶️</div>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M2 7h20v10h-6.2L13.2 14h-2.4l-2.6 3H2z"/></svg></div>
         <div class="tag" data-zh="元宇宙大师课">Metaverse Master Class</div>
         <h3 data-zh="AR/VR 与交互开发">AR/VR &amp; Interactive Development</h3>
         <p data-zh="从 Unity 引擎入门到 AR/VR 与元宇宙基础，再到次世代 3D 角色创作——由一线行业专家执教的进阶课程序列。">From Unity fundamentals to the science of AR/VR and next-gen 3D character creation —
         an advanced sequence taught by front-line industry experts.</p>
       </div>
       <div class="card">
-        <div class="icon">🏫</div>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M12 2.5L2.5 9h19z"/><path fill-rule="evenodd" d="M4.5 10.5h15V21h-15zM9.8 14.8h4.4V21H9.8z"/></svg></div>
         <div class="tag" data-zh="校园与企业">Campus &amp; Enterprise</div>
         <h3 data-zh="AI 实验室与专业培训">AI Labs &amp; Professional Training</h3>
         <p data-zh="校园物理智能实验室（AI Space）整体方案：课程、师资培训与年度赛事参与。同时为企业与科研机构提供具身智能时代的专业培训——已与加州伯克利等 11 所合作高校深度协作。">Turn-key campus Physical-AI labs — curriculum, teacher training and annual competition
@@ -80,17 +82,17 @@
       <div class="stat"><b>#1</b><span data-zh="世界冠军头衔">world championship title</span></div>
     </div>
     <div class="uniband" style="margin-top:34px">
-      <img src="assets/universities/ucberkeley.png" alt="UC Berkeley" title="UC Berkeley">
-      <img src="assets/universities/hku.png" alt="The University of Hong Kong" title="The University of Hong Kong">
-      <img src="assets/universities/tsinghua.png" alt="Tsinghua University" title="Tsinghua University">
-      <img src="assets/universities/sjtu.png" alt="Shanghai Jiao Tong University" title="Shanghai Jiao Tong University">
-      <img src="assets/universities/fudan.png" alt="Fudan University" title="Fudan University">
-      <img src="assets/universities/zhejiang.png" alt="Zhejiang University" title="Zhejiang University">
-      <img src="assets/universities/xjtu.png" alt="Xi'an Jiaotong University" title="Xi'an Jiaotong University">
-      <img src="assets/universities/jilin.png" alt="Jilin University" title="Jilin University">
-      <img src="assets/universities/hunan.png" alt="Hunan University" title="Hunan University">
-      <img src="assets/universities/hainan.png" alt="Hainan University" title="Hainan University">
-      <img src="assets/universities/wut.png" alt="Wuhan University of Technology" title="Wuhan University of Technology">
+      <img src="assets/universities/white/ucberkeley.png" alt="UC Berkeley">
+      <img src="assets/universities/white/hku.png" alt="The University of Hong Kong">
+      <img src="assets/universities/white/tsinghua.png" alt="Tsinghua University">
+      <img src="assets/universities/white/sjtu.png" alt="Shanghai Jiao Tong University">
+      <img src="assets/universities/white/fudan.png" alt="Fudan University">
+      <img src="assets/universities/white/zhejiang.png" alt="Zhejiang University">
+      <img src="assets/universities/white/xjtu.png" alt="Xi'an Jiaotong University">
+      <img src="assets/universities/white/jilin.png" alt="Jilin University">
+      <img src="assets/universities/white/hunan.png" alt="Hunan University">
+      <img src="assets/universities/white/hainan.png" alt="Hainan University">
+      <img src="assets/universities/white/wut.png" alt="Wuhan University of Technology">
     </div>
   </div>
 </section>

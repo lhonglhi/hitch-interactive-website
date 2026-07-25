@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Services — Hitch Interactive</title>
 <link rel="stylesheet" href="assets/style.css">
-<link rel="icon" href="assets/logo-mark.svg">
+<link rel="icon" href="assets/favicon.svg">
 <script src="assets/i18n.js"></script>
 <script src="assets/inquiry.js"></script>
 </head>
@@ -13,16 +13,18 @@
 
 <header>
   <div class="wrap nav">
-    <a class="logo" href="index.html"><img src="assets/logo-mark.svg" alt="Hitch Interactive"></a>
+    <a class="logo" href="index.html"><img src="assets/logo-mark-white.svg" alt="Hitch Interactive"></a>
     <nav><ul>
       <li><a class="ext" href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="赛事">Competition</a></li>
       <li><a href="learning.html" data-zh="学院">Academy</a></li>
       <li><a href="superstore.html" data-zh="机器人超市">Superstore</a></li>
       <li><a class="active" href="services.html" data-zh="服务">Services</a></li>
       <li><a class="ext" href="https://github.com/hitchopen" target="_blank" rel="noopener" data-zh="开源">Open Source</a></li>
-      <li><a class="cta" href="#" onclick="return openInquiry('general')" data-zh="联系销售">Contact Sales</a></li>
-      <li><button id="langToggle" class="langbtn" onclick="toggleLang()">中文</button></li>
     </ul></nav>
+    <div class="actions">
+      <a class="cta" href="#" onclick="return openInquiry('general')" data-zh="联系销售">Contact Sales</a>
+      <button id="langToggle" class="langbtn" onclick="toggleLang()">中文</button>
+    </div>
   </div>
 </header>
 
@@ -41,7 +43,7 @@
     <div class="grid g2">
 
       <div class="card">
-        <div class="icon">🧭</div>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path fill-rule="evenodd" d="M12 2.5A9.5 9.5 0 1 0 12 21.5 9.5 9.5 0 0 0 12 2.5zM16.4 7.6l-2.5 6.3L7.6 16.4l2.5-6.3z"/></svg></div>
         <div class="tag" data-zh="咨询">Consulting</div>
         <h3 data-zh="具身智能咨询与技能训练">Embodied-AI Consulting &amp; Skill Training</h3>
         <p data-zh="基于 Hitch Open 开源平台（github.com/hitchopen）的实战级服务：">Battle-tested services built on the Hitch Open open-source platform
@@ -55,7 +57,7 @@
       </div>
 
       <div class="card">
-        <div class="icon">🔧</div>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
         <div class="tag" data-zh="维保">Maintenance</div>
         <h3 data-zh="本地化最优维保网络">Best-in-Class Localized Maintenance</h3>
         <p data-zh="我们正在为人形机器人从零打造一支专属的现场服务队伍：">A field-service network we're building from the ground up, just for humanoid robots:</p>

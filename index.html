@@ -6,7 +6,7 @@
 <title>Hitch Interactive — A Hitchhiker's Guide to Embodied AI</title>
 <meta name="description" content="Hitch Interactive — the Physical-AI hub: competitions, learning, the robotics superstore, and embodied-AI services.">
 <link rel="stylesheet" href="assets/style.css">
-<link rel="icon" href="assets/logo-mark.svg">
+<link rel="icon" href="assets/favicon.svg">
 <script src="assets/i18n.js"></script>
 <script src="assets/inquiry.js"></script>
 </head>
@@ -14,21 +14,24 @@
 
 <header>
   <div class="wrap nav">
-    <a class="logo" href="index.html"><img src="assets/logo-mark.svg" alt="Hitch Interactive"></a>
+    <a class="logo" href="index.html"><img src="assets/logo-mark-white.svg" alt="Hitch Interactive"></a>
     <nav><ul>
       <li><a class="ext" href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="赛事">Competition</a></li>
       <li><a href="learning.html" data-zh="学院">Academy</a></li>
       <li><a href="superstore.html" data-zh="机器人超市">Superstore</a></li>
       <li><a href="services.html" data-zh="服务">Services</a></li>
       <li><a class="ext" href="https://github.com/hitchopen" target="_blank" rel="noopener" data-zh="开源">Open Source</a></li>
-      <li><a class="cta" href="#" onclick="return openInquiry('general')" data-zh="联系销售">Contact Sales</a></li>
-      <li><button id="langToggle" class="langbtn" onclick="toggleLang()">中文</button></li>
     </ul></nav>
+    <div class="actions">
+      <a class="cta" href="#" onclick="return openInquiry('general')" data-zh="联系销售">Contact Sales</a>
+      <button id="langToggle" class="langbtn" onclick="toggleLang()">中文</button>
+    </div>
   </div>
 </header>
 
 <div class="hero">
-  <img class="bg" src="assets/hero.jpg" alt="">
+  <img class="bg" src="assets/hero-speed.jpg" alt="">
+  <img class="fg" src="assets/hero-hopebot.png" alt="HOPE humanoid robot playing table tennis">
   <div class="wrap">
     <h1 data-zh="<span class='r'>AI</span> 的银河系漫游指南">A Hitchhiker's Guide to <span class="r">AI</span></h1>
     <p class="sub" data-zh="Hitch Interactive 是汇聚尖端人形机器人与灵巧手的枢纽：我们举办竞技场、传授技能、供应机器人，并让它们持续可靠地运行。">Hitch Interactive is the hub with cutting-edge humanoids and hands: we run the arenas,
@@ -43,9 +46,26 @@
 <section class="band-cream">
   <div class="wrap news-wrap">
     <h2 data-zh="公司要闻">Latest Highlights</h2>
-    <p class="lead" data-zh="来自 Hitch Open 世界AI锦标赛与 Hitch Interactive 的重大动态。左右滑动查看。">Major recent milestones from Hitch Open and Hitch Interactive. Swipe or use the arrows.</p>
-    <div class="news-nav"><button id="newsPrev" aria-label="Previous">‹</button><button id="newsNext" aria-label="Next">›</button></div>
+    <p class="lead" data-zh="来自 Hitch Open 世界AI锦标赛与 Hitch Interactive 的重大动态。左右滑动查看。">Major recent milestones from Hitch Open and Hitch Interactive. Swipe to browse.</p>
     <div class="news-track" id="newsTrack">
+      <article class="news-card">
+        <img src="assets/photo-hope-waic.jpg" alt="HOPE AI ping-pong human vs robot demo at WAIC 2026">
+        <div class="body">
+          <div class="date" data-zh="2026年7月20日 · WAIC 上海">July 20, 2026 · WAIC Shanghai</div>
+          <h3 data-zh="HOPE AI 自主决策乒乓挑战赛携智元远征 A3 亮相 WAIC 2026">HOPE AI Ping-Pong Challenge Debuts at WAIC 2026 on AgiBot's A3</h3>
+          <p data-zh="伯克利战队与北大—智源联合战队同台，在远征 A3 人形机器人上与人类选手无遥控、无脚本、无干预实时对抗；8月 HOPE 将作为正式项目登陆第二届世界人形机器人运动会。">Berkeley and PKU–BAAI teams ran their algorithms on the A3 humanoid against human players — no teleoperation, no scripts, no intervention — previewing HOPE's official event at the 2nd World Humanoid Robot Games this August.</p>
+          <a href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="阅读全文 ↗">Read more ↗</a>
+        </div>
+      </article>
+      <article class="news-card">
+        <img src="assets/photo-caohejing.jpg" alt="Caohejing–Hitch Open Physical Intelligence Joint Innovation Center launch at WAIC 2026">
+        <div class="body">
+          <div class="date" data-zh="2026年7月19日 · WAIC 上海">July 19, 2026 · WAIC Shanghai</div>
+          <h3 data-zh="漕河泾开发区—Hitch Open 物理智能联合创新中心正式发布">Caohejing–Hitch Open Physical Intelligence Joint Innovation Center Launches at WAIC</h3>
+          <p data-zh="漕河泾开发区、上海市人形机器人创新孵化器与 Hitch Open 三方共建 AI 自主决策科研基地——全球首个面向人形机器人团队的创新协作空间，也是 Hitch Open 在中国设立的首个常设科研空间。">Founded with Caohejing Hi-Tech Park and the Shanghai Humanoid Robot Innovation Incubator — the world's first robotics co-working space for humanoid teams, and Hitch Open's first permanent research base in China.</p>
+          <a href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="阅读全文 ↗">Read more ↗</a>
+        </div>
+      </article>
       <article class="news-card">
         <img src="assets/photo-hope.jpg" alt="HOPE AI Challenge">
         <div class="body">
@@ -73,24 +93,6 @@
           <a href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="阅读全文 ↗">Read more ↗</a>
         </div>
       </article>
-      <article class="news-card">
-        <div class="ph">🏰</div>
-        <div class="body">
-          <div class="date" data-zh="2026 · 上海迪士尼度假区">2026 · Shanghai Disney Resort</div>
-          <h3 data-zh="全球首场城市赛道 AI 竞速赛落地上海迪士尼">The World's First Urban AI Race Comes to Shanghai Disney Resort</h3>
-          <p data-zh="Hitch Open 将 AI 竞速从高山天路带入城市地标，让百万游客近距离见证物理智能的极限。">Hitch Open brings AI racing from mountain roads to a landmark urban circuit — physical AI at the limit, in front of millions.</p>
-          <a href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="阅读全文 ↗">Read more ↗</a>
-        </div>
-      </article>
-      <article class="news-card">
-        <div class="ph">🌉</div>
-        <div class="body">
-          <div class="date" data-zh="2027 · 加利福尼亚（预告）">2027 · California (Preview)</div>
-          <h3 data-zh="HOPE AI 挑战赛将登陆加州：亚、美、欧高校同台竞技">HOPE AI Challenge Heads to California — Asian, US &amp; European Universities on One Platform</h3>
-          <p data-zh="早期洽谈院校包括牛津大学、苏黎世联邦理工、田纳西大学、佛罗里达大学及 IEEE 机器人学会硅谷分会。">Early discussions include Oxford, ETH Zurich, U. of Tennessee, U. of Florida and the IEEE Robotics Society Silicon Valley.</p>
-          <a href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="阅读全文 ↗">Read more ↗</a>
-        </div>
-      </article>
     </div>
   </div>
 </section>
@@ -101,7 +103,7 @@
     <p class="lead" data-zh="一个具身智能枢纽，四扇门——选择你的入口。">One hub, four doors — pick yours.</p>
     <div class="grid g4">
       <div class="card tint tint-blue">
-        <div class="icon">🏆</div>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M9.7 8.5h4.6V21H9.7z M2.7 13.4h4.6V21H2.7z M16.7 16.4h4.6V21h-4.6z"/></svg></div>
         <div class="tag" data-zh="赛事">Competition</div>
         <h3>Hitch Open</h3>
         <p data-zh="全球顶级物理智能竞技场——天门山 AI 竞速与 HOPE 人形机器人挑战赛（世界人形机器人运动会正式项目）。">The world's premier physical-AI proving ground — AI racing on Tianmen Mountain and the
@@ -109,7 +111,7 @@
         <a class="go ext" href="https://hitchopen.ai" target="_blank" rel="noopener">hitchopen.ai</a>
       </div>
       <div class="card tint tint-lime">
-        <div class="icon">🎓</div>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M12 3L1.5 8.6 12 14.2l10.5-5.6z"/><path d="M5.2 11.8v4.4c0 1.8 3 3.3 6.8 3.3s6.8-1.5 6.8-3.3v-4.4L12 15.4z"/><path d="M21.4 9.4h1.2v5.6h-1.2z"/></svg></div>
         <div class="tag" data-zh="学院">Academy</div>
         <h3>Hitch Academy</h3>
         <p data-zh="AI、机器人与沉浸式技术的世界级课程——从 ROAR Academy 基础课到元宇宙大师课，由一流教育者执教。">World-class curricula in AI, robotics and immersive technology — from ROAR Academy
@@ -117,7 +119,7 @@
         <a class="go" href="learning.html" data-zh="浏览课程 →">Explore courses →</a>
       </div>
       <div class="card tint tint-orange">
-        <div class="icon">🤖</div>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path fill-rule="evenodd" d="M4 7.5h16V19H4zM6.6 10.8h10.8v3.4H6.6z"/><path d="M11.2 4h1.6v3.5h-1.6z"/><circle cx="12" cy="3.2" r="1.1"/></svg></div>
         <div class="tag" data-zh="机器人超市">Superstore</div>
         <h3 data-zh="机器人超市">The Robotics Superstore</h3>
         <p data-zh="我们把最尖端的人形机器人、灵巧手与动作捕捉系统摆上货架——覆盖各价位，可买可租，由我们自己的团队保驾护航。">We put the most advanced humanoids, dexterous hands and motion-capture systems on the
@@ -125,7 +127,7 @@
         <a class="go" href="superstore.html" data-zh="查看产品目录 →">See the catalog →</a>
       </div>
       <div class="card tint tint-green">
-        <div class="icon">🔧</div>
+        <div class="icon"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
         <div class="tag" data-zh="服务">Services</div>
         <h3 data-zh="咨询与维保">Consulting &amp; Maintenance</h3>
         <p data-zh="具身智能咨询、基于我们开源技术栈的专业培训，以及全天候待命的本地维保团队。">Embodied-AI consulting, professional training on our open-source stack, and a local
@@ -139,24 +141,26 @@
 <section class="band-sky">
   <div class="wrap">
     <h2 data-zh="赢得对 AI 的信任">Earning the Trust in AI</h2>
-    <div class="stats" style="margin-top:30px">
-      <div class="stat"><b>1B+</b><span data-zh="媒体触达用户">users reached</span></div>
-      <div class="stat"><b>500K+</b><span data-zh="现场观众">on-site spectators</span></div>
+    <div class="stats s6" style="margin-top:30px">
+      <div class="stat"><b>1.6B+</b><span data-zh="触达消费者">consumers reached</span></div>
+      <div class="stat"><b>60M+</b><span data-zh="视频播放量">video views</span></div>
+      <div class="stat"><b>500K+</b><span data-zh="现场参与者">in-person participants</span></div>
+      <div class="stat"><b>75+</b><span data-zh="WAIC 2026 媒体报道">media reports at WAIC 2026</span></div>
       <div class="stat"><b>11</b><span data-zh="合作高校">partner universities</span></div>
       <div class="stat"><b>#1</b><span data-zh="世界冠军头衔">world championship title</span></div>
     </div>
     <div class="uniband" style="margin-top:38px">
-      <img src="assets/universities/ucberkeley.png" alt="UC Berkeley" title="UC Berkeley">
-      <img src="assets/universities/hku.png" alt="The University of Hong Kong" title="The University of Hong Kong">
-      <img src="assets/universities/tsinghua.png" alt="Tsinghua University" title="Tsinghua University">
-      <img src="assets/universities/sjtu.png" alt="Shanghai Jiao Tong University" title="Shanghai Jiao Tong University">
-      <img src="assets/universities/fudan.png" alt="Fudan University" title="Fudan University">
-      <img src="assets/universities/zhejiang.png" alt="Zhejiang University" title="Zhejiang University">
-      <img src="assets/universities/xjtu.png" alt="Xi'an Jiaotong University" title="Xi'an Jiaotong University">
-      <img src="assets/universities/jilin.png" alt="Jilin University" title="Jilin University">
-      <img src="assets/universities/hunan.png" alt="Hunan University" title="Hunan University">
-      <img src="assets/universities/hainan.png" alt="Hainan University" title="Hainan University">
-      <img src="assets/universities/wut.png" alt="Wuhan University of Technology" title="Wuhan University of Technology">
+      <img src="assets/universities/white/ucberkeley.png" alt="UC Berkeley">
+      <img src="assets/universities/white/hku.png" alt="The University of Hong Kong">
+      <img src="assets/universities/white/tsinghua.png" alt="Tsinghua University">
+      <img src="assets/universities/white/sjtu.png" alt="Shanghai Jiao Tong University">
+      <img src="assets/universities/white/fudan.png" alt="Fudan University">
+      <img src="assets/universities/white/zhejiang.png" alt="Zhejiang University">
+      <img src="assets/universities/white/xjtu.png" alt="Xi'an Jiaotong University">
+      <img src="assets/universities/white/jilin.png" alt="Jilin University">
+      <img src="assets/universities/white/hunan.png" alt="Hunan University">
+      <img src="assets/universities/white/hainan.png" alt="Hainan University">
+      <img src="assets/universities/white/wut.png" alt="Wuhan University of Technology">
     </div>
   </div>
 </section>
@@ -165,9 +169,8 @@
   <div class="wrap">
     <div class="strip">
       <img src="assets/hitchopen.png" alt="Hitch Open World AI Championships">
-      <p data-zh="<b>Hitch Open 世界AI锦标赛</b>——大自然的物理智能竞技场。2026年，HOPE 人形机器人挑战赛将亮相北京第二届世界人形机器人运动会，全球首场城市 AI 竞速赛也将登陆上海迪士尼度假区。"><b>Hitch Open World AI Championships</b> — nature's arena for physical AI.
-      In 2026 the HOPE humanoid challenge debuts at the 2nd World Humanoid Robot Games in Beijing,
-      and our first urban AI race arrives at Shanghai Disney Resort.</p>
+      <p data-zh="<b>Hitch Open 世界AI锦标赛</b>——大自然的物理智能竞技场。2026年，HOPE 人形机器人挑战赛将亮相北京第二届世界人形机器人运动会。"><b>Hitch Open World AI Championships</b> — nature's arena for physical AI.
+      In 2026 the HOPE humanoid challenge debuts at the 2nd World Humanoid Robot Games in Beijing.</p>
       <a class="btn ghost" href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="进入竞技场 ↗">Enter the arena ↗</a>
     </div>
   </div>
