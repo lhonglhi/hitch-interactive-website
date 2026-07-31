@@ -1,11 +1,11 @@
 /* Hitch Interactive — Email Inquiry modal (bilingual).
    The destination address is not present in page markup or visible copy.
-   For production, point FORM_ENDPOINT at a form service / backend to fully
-   server-side the address; until then, submission opens the visitor's mail
-   client via a runtime-assembled address. */
+   Submissions POST to FormSubmit (no account needed; first submission emails
+   ADDR an activation link that must be clicked once). If the request fails,
+   falls back to opening the visitor's mail client. */
 (function () {
   var ADDR = atob('c2FsZXNAaW50ZWxsaWdlbnRyYWNpbmcuY29t');
-  var FORM_ENDPOINT = null; // e.g. 'https://formspree.io/f/XXXX'
+  var FORM_ENDPOINT = 'https://formsubmit.co/ajax/' + ADDR;
 
   var L = {
     en: {
@@ -82,13 +82,27 @@
     var subject = t.titles[state.kind] + (state.product ? ' — ' + state.product : '') + ' [hitchinteractive.com]';
     var body = (name ? 'Name: ' + name + '\n' : '') + (email ? 'Email: ' + email + '\n' : '') +
                (org ? 'Organization: ' + org + '\n' : '') + '\n' + msg;
-    if (FORM_ENDPOINT) {
-      fetch(FORM_ENDPOINT, { method: 'POST', headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ subject: subject, name: name, email: email, org: org, message: msg }) })
-        .then(function () { closeInquiry(); alert(lang() === 'zh' ? '已发送，谢谢！' : 'Sent — thank you!'); });
-    } else {
+    function mailtoFallback() {
       window.location.href = 'mailto:' + ADDR + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
       closeInquiry();
+    }
+    if (FORM_ENDPOINT) {
+      var btn = document.getElementById('inqSend');
+      btn.disabled = true;
+      fetch(FORM_ENDPOINT, { method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({ _subject: subject, name: name, email: email, _replyto: email,
+          organization: org, message: msg, _template: 'table' }) })
+        .then(function (r) { return r.json(); })
+        .then(function (j) {
+          if (String(j.success) !== 'true') throw new Error(j.message || 'send failed');
+          closeInquiry();
+          alert(lang() === 'zh' ? '已发送，谢谢！我们会尽快回复。' : 'Sent — thank you! We\'ll get back to you soon.');
+        })
+        .catch(mailtoFallback)
+        .finally(function () { btn.disabled = false; });
+    } else {
+      mailtoFallback();
     }
   }
 })();
