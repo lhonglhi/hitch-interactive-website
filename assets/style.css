@@ -194,6 +194,14 @@ section.band-sky .stat span{color:#9AA5B1}
 section.band-black .strip{background:var(--carbon-2);border-color:var(--carbon-line)}
 section.band-black .strip p{color:#C9D2DC}
 section.band-black .strip b{color:#fff}
+/* 两条赛事 strip：grid-auto-rows:1fr 让两张卡等高(内容长度不同也不会一高一矮) */
+.strips{display:grid;gap:18px;grid-auto-rows:1fr}
+/* logo 列专用 class —— 不能用 .strip>a，那会连同「进入竞技场」按钮一起命中并撑成 300px。
+   两个 lockup 比例不同(竞速 7.1:1 / HOPE 4.7:1)，按统一宽度对齐，并给列一个固定高度让 logo 垂直居中 */
+.strip .strip-logo{display:flex;align-items:center;justify-content:center;flex:0 0 300px;height:64px}
+.strip .strip-logo img{display:block;width:100%;height:auto}
+@media(max-width:900px){.strip .strip-logo{flex:0 0 auto;max-width:100%;height:auto}
+  .strip .strip-logo img{width:auto;max-width:100%;max-height:56px}}
 section.band-sky .btn.ghost,section.band-lime .btn.ghost,section.band-green .btn.ghost,section.band-orange .btn.ghost,section.band-black .btn.ghost{border-color:#fff;color:#fff}
 section.band-sky .btn.ghost:hover,section.band-lime .btn.ghost:hover,section.band-green .btn.ghost:hover,section.band-orange .btn.ghost:hover,section.band-black .btn.ghost:hover{background:var(--lime);border-color:var(--lime);color:#111}
 /* brand-coded cards (Four ways in): white card + brand hue as a thin top rule */

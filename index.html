@@ -130,8 +130,8 @@
         <div class="icon"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
         <div class="tag" data-zh="服务">Services</div>
         <h3 data-zh="咨询与维保">Consulting &amp; Maintenance</h3>
-        <p data-zh="具身智能咨询、基于我们开源技术栈的专业培训，以及全天候待命的本地维保团队。">Embodied-AI consulting, professional training on our open-source stack, and a local
-        maintenance crew on call around the clock.</p>
+        <p data-zh="具身智能咨询、基于我们开源技术栈的专业培训，以及本地维保团队。">Embodied-AI consulting, professional training on our open-source stack, and a local
+        maintenance crew.</p>
         <a class="go" href="services.html" data-zh="了解服务 →">Our services →</a>
       </div>
     </div>
@@ -167,11 +167,27 @@
 
 <section class="band-black">
   <div class="wrap">
+    <!-- 两个赛项各自成条，各自的按钮进各自的页面。
+         logo 用深色底专用版(品牌红 + 白字)：原 hitchopen.png 是浅底版、通体品牌红，
+         在 .strip 的 #161B22 上对比度仅 3.6:1，几乎看不见 -->
+    <div class="strips">
     <div class="strip">
-      <img src="assets/hitchopen.png" alt="Hitch Open World AI Championships">
-      <p data-zh="<b>Hitch Open 世界AI锦标赛</b>——大自然的物理智能竞技场。2026年，HOPE 人形机器人挑战赛将亮相北京第二届世界人形机器人运动会。"><b>Hitch Open World AI Championships</b> — nature's arena for physical AI.
-      In 2026 the HOPE humanoid challenge debuts at the 2nd World Humanoid Robot Games in Beijing.</p>
-      <a class="btn ghost" href="https://hitchopen.ai" target="_blank" rel="noopener" data-zh="进入竞技场 ↗">Enter the arena ↗</a>
+      <a class="strip-logo" href="https://hitchopen.ai/racing.html" target="_blank" rel="noopener">
+        <img src="assets/hitchopen-racing-white.svg" alt="Hitch Open 世界 AI 竞速锦标赛">
+      </a>
+      <p data-zh="<b>Hitch Open 世界AI竞速锦标赛</b>——大自然的物理智能竞技场。L4–L5 全自动驾驶挑战天门山九十九道弯，AI 首次在真实世界完成“感知—决策—执行”完整闭环。"><b>Hitch Open World AI Racing Championships</b> — nature's arena for physical AI.
+      Fully autonomous L4–L5 racing on Tianmen Mountain's 99 bends, where AI first closed the perception–decision–action loop in the real world.</p>
+      <a class="btn ghost" href="https://hitchopen.ai/racing.html" target="_blank" rel="noopener" data-zh="进入竞技场 ↗">Enter the arena ↗</a>
+    </div>
+
+    <div class="strip">
+      <a class="strip-logo" href="https://hitchopen.ai/hope.html" target="_blank" rel="noopener">
+        <img src="assets/hope-white.svg" alt="HOPE — Hitch Open AI 自主决策乒乓挑战赛">
+      </a>
+      <p data-zh="<b>HOPE 人形机器人挑战赛</b>——人形机器人无遥控、无脚本、无干预，自主完成“感知—预测—规划—击球”闭环。2026 年 8 月作为正式比赛项目登陆北京第二届世界人形机器人运动会。"><b>HOPE Humanoid Challenge</b> — humanoid robots close the perceive–predict–plan–strike loop with no remote control, no scripts, no intervention.
+      An official competition of the 2nd World Humanoid Robot Games in Beijing, August 2026.</p>
+      <a class="btn ghost" href="https://hitchopen.ai/hope.html" target="_blank" rel="noopener" data-zh="进入竞技场 ↗">Enter the arena ↗</a>
+    </div>
     </div>
   </div>
 </section>
